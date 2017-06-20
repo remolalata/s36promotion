@@ -1,0 +1,87 @@
+.LBD_CaptchaDiv {
+  padding: 0 !important;
+  margin: 0 !important;
+  overflow: visible !important;
+}
+
+*html .LBD_CaptchaDiv {
+  overflow: hidden !important;
+}
+
+.LBD_CaptchaImageDiv {
+  margin: 0 !important;
+  padding: 0 !important;
+  display: -moz-inline-stack;
+  display: inline-block !important;
+  vertical-align: top !important;
+  zoom: 1 !important;
+  *display: inline !important;
+}
+
+.LBD_CaptchaIconsDiv {
+  text-align: left !important;
+  margin: 0 2px -4px 2px !important;
+  padding: 0 !important;
+  display: -moz-inline-stack;
+  display: inline-block !important;
+  vertical-align: top !important;
+  zoom: 1 !important;
+  *display: inline !important;
+}
+
+.LBD_CaptchaDiv a {
+  margin: 0 !important;
+  padding: 0 !important;
+  display: -moz-inline-stack;
+  display: inline-block !important;
+  background-color: transparent !important;
+  text-decoration: none !important;
+  border: none !important;
+  vertical-align: top !important;
+  zoom: 1 !important;
+  *display: inline !important;
+}
+
+.LBD_CaptchaDiv a:focus, .LBD_CaptchaDiv a:active {
+  outline: 0 !important;
+  -moz-outline-style: none !important;
+}
+
+.LBD_CaptchaDiv a img {
+  border: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  display: block !important;
+}
+
+.LBD_CaptchaDiv a:focus img, .LBD_CaptchaDiv a:active img {
+  border: 1px dotted #333 !important;
+  margin: -1px !important;
+}
+
+.LBD_CaptchaIconsDiv a {
+  margin: 1px 2px 4px 2px !important;
+}
+
+a.LBD_ReloadLink {
+  display: none !important;
+}
+
+.LBD_Placeholder {
+  visibility: hidden !important;
+  width: 0 !important;
+  height: 0 !important;
+}
+
+*html .LBD_Placeholder {
+  display: none !important;
+}
+
+*:first-child+html .LBD_Placeholder {
+  display: none !important;
+}
+
+.LBD_Warning {
+  font-size: 12px !important;
+  color: red !important;
+}

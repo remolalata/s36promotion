@@ -1,0 +1,321 @@
+﻿@charset "utf-8";
+/* CSS Document */
+.promo_menu{height:60px;padding:0 37px;}
+.promo_menu li{width:157px;line-height:38px;height:39px;text-align:center;float:left;border-bottom:2px solid #ee6f22;}
+.promo_menu a{color:#fff;font-weight:bold;font-size:14px;display:block;width:157px;height:39px;}
+.promo_menu a:hover{color:#fff;background-color:#f87b2f;}
+.promo_menu .active a{background-color:#ee6f22;color:#fff;}
+
+.pf_menu{height:41px;padding-left:28px;}
+.pf_menu_a{padding-left:100px;}
+.pf_menu_b{padding-left:300px;}
+.pf_menu li{width:138px;line-height:28px;height:44px; text-align:center;float:left;background:url(http://www.s36.com/Images/pf_menu-div0.jpg)136px 4px no-repeat;}
+.pf_menu li.line-none{background:none;}
+.pf_menu a{color:#fff;font-weight:bold;font-size:14px;display:block;width:130px;height:37px;}
+.pf_menu a:hover{background:url(http://www.s36.com/images/pt_btn2_in.png) 2px top no-repeat;color:#000;}
+.pf_menu .active a{background:url(http://www.s36.com/images/pt_btn2_in.png) 2px top no-repeat;color:#000;}
+.pf_menu_s dl dt{float:left;padding-right:100px;}
+.pf_menu_s dl dd{float:left;padding:0 16px;background:url(http://www.s36.com/Images/pf_menu-div0.jpg) right center no-repeat;}
+.pf_menu_s a{color:#fff;font-size:13px;}
+.pf_1{float:left;padding:9px; background-image:url(http://www.s36.com/images/pft_bg.png); background-repeat:no-repeat;width:940px;height:124px;line-height:24px;font-size:14px;}
+.pf_1 img{border:1px solid #898989;}
+.pf_more a{line-height:30px;color:#feb902;font-size:16px; font-weight:bold;padding-left:12px;}
+.pf_more a:hover{color:#000;}
+.pf_more_ps{float:left;margin-right:30px;}
+.pf_more_TG{padding-top: 20px; background-image:url(http://www.s36.com/images/star-point.png); background-repeat:no-repeat; background-position:0px 26px; text-indent:10px;}
+.pf_more_bg{ background-image:url(http://www.s36.com/images/star-point.png); background-repeat:no-repeat; background-position:0px 7px;float:right; width:100px; text-indent:8px;}
+.pf_txt{float:right;width:630px; height:90px;}
+.pf_txt dt{width:22px;float:left;}
+.pf_txt dd{width:606px;float:left; }
+.pf_txt span{color:#feb902;}
+.pf_txt_hh{ padding-bottom:12px;}
+.pay_menu{padding:10px 0 0 297px;height:41px;}
+.pay_menu2{padding-left:17px;}
+.pay_menu li{width:158px;line-height:36px; text-align:center;padding-right:14px;float:left;white-space:nowrap;}
+.pay_menu a{color:#FFF;font-weight:bold;font-size:16px; display:block;}
+.pay_menu a:hover{background-image:url(http://www.s36.com/images/pay_botton_in.jpg);}
+.pay_menu .active a{background-image:url(http://www.s36.com/images/pay_botton_in.jpg);}
+.help_menu{padding:10px 0 0 227px;height:41px;}
+.help_menu li{width:158px;line-height:36px; text-align:center;padding-right:14px;float:left;}
+.help_menu a{color:#FFF;font-weight:bold;font-size:16px; display:block;}
+.help_menu a:hover{background-image:url(http://www.s36.com/images/pay_botton_in.jpg);}
+.help_menu .active a{background-image:url(http://www.s36.com/images/pay_botton_in.jpg);}
+.c_line{ background-image:url(http://www.s36.com/images/c_line.jpg); background-repeat:repeat-x; background-position:bottom;height:20px;}
+.color_y{color:#e3ab0e;font-weight:bold;}
+.color_yellow{color:#e3ab0e;}
+.r_c .registry{width:920px!important; font-size:12px; line-height:20px;margin:0 auto;}
+.r_c .registry p{height:25px;display:block;}
+.r_c .registry p label{width:210px!important;text-align:right;padding-right:8px;float:left;}
+.r_c .registry p span{ padding-right:5px;float:left; position:relative;}
+.r_c .registry p span img{padding-top:3px;}
+.r_c .registry p b{font-size:11.5px;font-weight:normal;color:#feb902;line-height:14px;}
+.r_c .registry .ps{height:26px;padding-left:80px;}
+.r_c .registry .check input{height:22px;padding:2px;margin:0;}
+.r_c .registry .hw, .deposit_bg .hw{background:url(http://www.s36.com/images/hw_bg.jpg) repeat-x;padding:0 4px;height:18px;border:1px solid #434343;font-size:11px;}
+.r_c .registry a.hw, .deposit_bg a.hw{display:inline-block;color:#000;line-height:18px;}
+.r_c .btnps{padding-left: 240px;}
+.r_d .registry{width:750px; padding-left:120px; font-size:14px; line-height:20px;}
+.r_d .registry p{height:25px;display:block;}
+.r_d .registry p label{width:150px;text-align:right;padding-right:8px;float:left;}
+.r_d .registry p span{ padding-right:5px;float:left; position:relative;}
+.r_d .registry p span img{padding-top:3px;}
+.r_d .registry p b{font-size:12px;font-weight:normal;color:#feb902;line-height:14px;}
+.r_d .registry .ps{height:26px;padding-left:80px;}
+.r_d .registry .check input{height:22px;padding:2px;margin:0;}
+.r_d .registry .hw, .deposit_bg .hw{background:url(http://www.s36.com/images/hw_bg.jpg) repeat-x;padding:0 4px;height:18px;border:1px solid #434343;font-size:11px;}
+.r_d .registry a.hw, .deposit_bg a.hw{display:inline-block;color:#000;line-height:18px;}
+.r_d .btnps{padding-left: 272px;}
+.mp_ps{font-size:14px; line-height:23px;}
+.back_main a{color:#fff;}
+.red{color:#feb902;font-size:12px;}
+.redd{color:#feb902;font-size:12px; font-family:Arial;}
+.red_2{color:#feb902;}
+.Today_tit{height: 30px;text-align: center; line-height: 26px; font-size: 15px; font-weight:bold;}
+.Promo_in_tw{float:left;width:940px;margin-bottom:25px;}
+.Promo_in_img{float:left;padding: 0 12px 5px 0;}
+.Promo_in_img2{float:left;width:630px; line-height:22px;}
+.Promo_in_img2 dt{width:25px;float:left;}
+.Promo_in_img2 dd{width:603px;float:left; }
+.Promo_in_img3{padding-left:30px;width:600px;float:left;}
+
+.promo_new .tit{background:url(http://www.s36.com/images/tit002.png) no-repeat;}
+.promo_new .row{padding-left:32px;font-size:12px;}
+.promo_new .row ul li{display:block; float:left; width:305px; height:370px;position:relative;padding:6px;}
+.promo_new .row h3{font-size:16.5px;padding-top:12px;}
+.promo_new .row p{padding-top:4px;}
+.promo_new .row a{color:#eeeeee;display:block;}
+.promo_new .row a:hover{color:#d9d9d9;}
+.promo_new .row span.btn{width:68px;height:20px;text-align:center;line-height:20px;  color:#000;position:absolute;bottom:20px;right:6px;background:url(http://www.s36.com/images/btn_promo.png) no-repeat;}
+.promo_new .row span.btn1{width:68px;height:20px;text-align:center;line-height:20px;  color:#000;position:absolute;bottom:20px;right:110px;background:url(http://www.s36.com/images/btn_promo.png) no-repeat;}
+.promo_new .row .btn-promo a{
+	text-decoration: none;
+	color: #000;
+}
+.forms-modal{
+
+margin: 50px;
+text-align: center;
+}
+.control-label{
+	margin: 0 30px;
+}
+.form-horizontal .form-group {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.form-group {
+    margin-bottom: 15px;
+}
+.form-horizontal .form-group::before{
+	display: table;
+content: " ";
+
+}
+.form-horizontal .control-label,.form-horizontal .form-group::after {
+    font-weight: 400 !important;
+    font-size: 12px;
+}
+.form-horizontal .control-label {
+    padding-top: 7px;
+    margin-bottom: 0;
+    text-align: right;
+}
+.input-border {
+    border-bottom: 1px solid #4C4C4C;
+    border-radius: 2px;
+}
+.modal-custom-lg .modal-body input {
+    background: #111111;
+    border: 2px solid black;
+        border-bottom-width: 2px;
+        border-bottom-style: solid;
+        border-bottom-color: black;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    border-bottom-color: black;
+    border-radius: 3px;
+    outline: none;
+    height: 30px;
+    color: #A4A4A4;
+    border-bottom: none;
+}
+.form-control {
+    display: block;
+    width: 260px;
+    height: 20px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+.col{
+	display: inline-block;
+	margin: 0 auto;
+}
+.col-promo-info{
+	font-size: 16px;
+	font-weight: 700;
+	color: #FFB012;
+	min-width: 285px;
+}
+.tit_f16{font-size:16px;}
+.RL{float:left;padding:2px;}
+.TF{ height:28px; text-align:right; background-color:#4C4C4C; width:330px; padding-right:5px;}
+.TF2{ text-align:right; background-color:#4C4C4C; width:300px; text-align:center;}
+.cu3er_flash{width:790px; height:299px; padding-top:3px; background-image:url(http://www.s36.com/Images/H_slider_bg.png);position:relative;}
+.cs_f{font-size:16.5px;font-family:Arial, Helvetica, sans-serif;}
+.terms{padding-left:380px;height:70px;}
+.terms dl{float:left;}
+.tgc{width:400px; text-align:center;font-size:16px;color:#fff;font-weight:bold;height:30px;padding-top:15px;}
+.join_member{float:left;background:url(http://www.s36.com/images/btn2_promo.png) no-repeat; width:293px;height:24px;line-height:22px; text-align:center;margin-top:10px;}
+.join_member a{color:#404040; display:block;font-size:16px;font-weight:600;}
+.join_member a:hover{color:#000;}
+.oc a{color:#fff; text-decoration:underline;}
+.oc a:hover{color:#000;}
+.link a{ text-decoration:underline;color:#e3ab0e;}
+.wpMain { background:#FFF; width:960px; height:540px; margin:0px; padding:0px; display:block; }
+.wpMain a { cursor:pointer; display:block; }
+.wpSizes { position:relative; top:-14px; background:url(http://www.s36.com/Activities/Images/tmac/menu_bg2.jpg) 0 0 repeat-x; width:958px; height:29px; border:1px #666 solid; font-family:Arial;}
+.wpSizes a{color:#000;display:block;}
+.wpSizes h2 { margin-left:12px; display:inline; float:left; color:#000; line-height:28px; text-align:center; }
+.wpSizes ul li { width:auto; height:29px; padding:0 6px; /*background-color:#F4F4F4;*/ border-left:1px #666 solid; line-height:28px; font: Arial, Helvetica, sans-serif; font-size:12px; color:#000000; float:right; display:inline;text-align:center; }
+.wpSizes ul li.w{width:62px;}
+.wpSizes ul li.b_n{border-left:none;}
+.wpSizes ul li:hover { cursor:pointer; background-color:#F60; }
+.att_tmac ul li{background:url(http://www.s36.com/images/Activities_bg.png) no-repeat;padding:10px 0 0 11px;position:relative;height:204px; width:308px; float:left;}
+.att_tmac ul li span{position:absolute;right:16px;bottom:17px;padding:0 6px;background:#000;opacity:0.65; filter: alpha(opacity=65);height:24px;}
+.att{width:305px; background-image:url(http://www.s36.com/images/Activities_bg.png);background-repeat:no-repeat;padding:9px 0 20px 10px;float:left;height:265px;}
+.att2{width:298px;height:210px; background:url(http://www.s36.com/images/Activities_bg.png) no-repeat;background-size:256px 202px;  float:left;padding:10px 0 0 9px;}
+.att_img{border:1px solid #474747;width:292px;}
+.att dl{float:left;}
+.att a{color:#fff;}
+.att a:hover{color:#e3ab0e;}
+.att dt{padding:15px 12px 2px 4px;line-height:18px;}
+.att dd{height:22px;font-size:12px;color:#e3ab0e;padding-left:4px;}
+.att_in{padding-bottom:16px;}
+.att_in dl{padding:0 20px 15px 0;}
+.att_in span{line-height:20px;font-weight:bold;font-size:16px;}
+.att_in dt{height:35px;font-size:12px;color:#e3ab0e;}
+.att_in dd{line-height:18px;}
+.att_in p{text-indent:30px;padding-bottom:20px;}
+.att_in_c p{text-indent:0;}
+.att_in_c p a{color:#e3ab0e;}
+.att_in .t_c{text-align:center; display:block;line-height:30px;font-size:14px;}
+.att_txt{padding-right:10px;}
+.att_video{float: left; text-align: center;width:315px;height:220px;}
+.attin_img{height:250px;width:460px; border:3px solid #fff;float:left;margin:4px; }
+.a_tmac ul li{padding:12px 2px;float:left;border-bottom:1px solid #000; position:relative;}
+.a_tmac ul li i{position:absolute;top:60px;left:1px;}
+.a_b29 ul li{width:236px;height:181px;   padding:22px 42px;float:left;border-bottom:1px solid #6a6a6a; background: url(http://www.s36.com/images/act_bg2.png) center center no-repeat;}
+
+.b_up{text-align: center; width: 942px; background-image: url(http://www.s36.com/images/pf_up.png);background-repeat: no-repeat; background-position: 526px 6px;}
+.td_gm{ background-color:#222222;padding:0 15px 0 5px;height:28px; text-align:center;}
+.td_gm2{ background-color:#4C4C4C;padding:0 15px 0 5px;height:28px;}
+.cc{}
+.cc .titcc{font-size:16px; font-weight:bold;padding-bottom:12px;}
+.cc .cc_bg{width:760px; background-color:#48484a; border:1px solid #757575;padding:8px 8px 8px 38px;background-image: url(http://www.s36.com/images/clear_icon.png);background-repeat: no-repeat; background-position:8px 12px;}
+.cc .ccc{padding:12px 0 12px 0;}
+.cc .tit001{color:#feb902;height:24px;}
+.cc .tit001 a{padding-left:18px;color:#feb902;background-image: url(http://www.s36.com/images/icon002.png);background-repeat: no-repeat; background-position:0 6px; }
+.cc .tit001 a:hover{color:#000;background-image: url(http://www.s36.com/images/icon002_b.png);background-repeat: no-repeat; background-position:0 4px;}
+.cc .tit002{padding:6px 0 12px 34px;width:750px;}
+.cc .tit002 .lh002{ padding:4px 0 4px 0;}
+.cc .tit003{padding:4px 0 4px 34px;}
+.cc .tit003 dt{width:22px;float:left;}
+.cc .tit003 dd{width:690px;float:left;}
+.website{width:940px;}
+.ws_menu_home{font-size:16px;padding:8px 0 0 10px;}
+.ws_menu_home a{color:#fff;}
+.ws_menu_home a:hover{color:#feb902;}
+.website .ws_menu{float:left;padding-right:40px;}
+.website .ws_menu dt{font-size:16px;padding-bottom:4px;}
+.website .ws_menu dd{padding-left:2px;}
+.website .ws_menu dl a{color:#fff;}
+.website .ws_menu dl a:hover{color:#feb902;}
+.website .ws_tit{font-size:16px;color:#feb902; padding:8px 0 0 10px;font-weight:bold;}
+.website_top{height:14px; background-image: url(http://www.s36.com/images/WebSite_top_bg.png);background-repeat: no-repeat;}
+.website_bg{background-image: url(http://www.s36.com/images/WebSite_bg.png); padding:2px 22px 2px 22px;}
+.website_bottom{height:18px; background-image: url(http://www.s36.com/images/WebSite_down_bg.png);background-repeat: no-repeat;}
+.au {padding-right:20px;}
+.au a{color:#feb902;}
+.au span{font-size:16px;color:#feb902;}
+.au_img{height:310px;padding-top:10px;}
+.au_img_a{height:285px;width:395px;float:left;background-image: url(http://www.s36.com/images/AboutUs/au_img_bg.png);background-repeat: no-repeat;padding:11px 0 0 13px;}
+.au_img_a .bl{border:1px solid #434343;width:364px;height:257px; overflow:hidden;}
+.au_img_b{height:295px;width:525px;float:left;padding-top:2px;}
+.au_img_b dl dd{width:122px;height:84px;margin:5px 5px 0 0;border:1px solid #a8a8a8;float:left;}
+.lt_tabs{width:33px;height:384px;float:left;margin:0;padding:0;}
+.lt_tabs dd{margin:0;padding:0;float:left;cursor:pointer;}
+.lt_tabs dd.tab{position:relative; z-index:1;}
+.lt_tabwraps{margin:0;}
+.lt_tabwraps dd.wrp{margin:0;padding:0;display:none;}
+.lt_tabwraps dd.wrp_active{display:block;}
+.lt_tabs2{width:100%;margin:0;padding:0;}
+.lt_tabs2 dd{margin:0;padding:0;float:left;cursor:pointer;}
+.color_red{ color:Red;}
+.helpimg{padding-left:105px;width:744px;}
+.helppay_btn_ps{position:absolute;left:120px;top:5px;}
+.helppay_btn_ps dl dt{float:left;padding-right:8px;}
+.helppay_btn_ps_en {position:absolute;left:150px;top:5px;}
+.helppay_btn_ps_en dl dt{float:left;padding-right:8px;}
+.helpbg{width:730px;padding:0 0 8px 110px;}
+.helpbg_tit{font-size:15px;font-weight:bolder;padding-bottom:12px;}
+.helpbg_a{background-image: url(http://www.s36.com/Images/Help/help001_bg_a.png);height:38px;font-size:18px;font-weight:bold;padding-top:22px;}
+.helpbg_a span{float:left;width:130px; text-align:center;}
+.helpbg_b{background-image: url(http://www.s36.com/Images/Help/help001_bg_b.png); background-repeat:repeat-y;padding:0 0 20px 125px;}
+.helpbg_b p{width:520px;padding:5px 0 8px 0;  font-size:15px;font-weight:bolder;}
+.helpbg_b span{color:#e3ab0e;}
+.helpbg_b img{border:1px solid #fff;}
+.helpbg_c{background-image: url(http://www.s36.com/Images/Help/help001_bg_c.png);height:16px;}
+.help_content p{display:block;padding-bottom:24px;}
+.help_content span{font-size:16px;color:#feb902;display:block;}
+.help_content a{color:#fff;}
+.help_content a:hover{color:#e3ab0e;}
+/* scrollBar */
+.content_txt span{line-height:24px;}
+.content_txt h2{font-weight:bold;line-height:34px;}
+.content_txt dt{width:16px;float:left;padding-left:16px;}
+.content_txt dd{width:880px;float:left;}
+.content_txt{font-size:14px;line-height:18px;width:920px;}
+.c_txt34{font-size:14px;color:#feb902;text-align:center;font-family:Arial;width:940px;background-image:url(http://www.s36.com/images/c_line.jpg); background-repeat:repeat-x; background-position:bottom;height:24px;}
+.c_txt342{font-size:14px;color:#feb902;text-align:center;font-family:Arial;width:940px;padding-bottom:10px;}
+.c_txt513{font-size:14px;color:white;padding:0 0 5px 5px;text-align:left;}
+.c_h8{height:8px;}
+.back{background-image:url(http://www.s36.com/Activities/Slider_Images/back_bg.png);background-repeat:no-repeat;height:330px; padding:30px 0 0 22px;}
+.imageflowa{width:938px;height:334px;overflow:hidden;margin:0 auto; }
+.imageflowa .navigation{position:relative;top:60px;}
+.imageflowa .imageflow{top:15px;}
+@media screen, projection {
+	.imageflow {position:relative; text-align:left;	visibility:hidden;width:91%;}
+    .imageflow a{ visibility:hidden;}
+	.imageflow img {border:none;position:absolute;top:0px;visibility:hidden;-ms-interpolation-mode:bicubic; /* Enables bicubic image resampling for the IE7 */cursor:pointer;}
+	.imageflow p {margin:0 auto;text-align:center;}
+	.imageflow .loading {border:1px solid white;height:15px;left:50%;margin-left:-106px;padding:5px;position:relative;visibility:visible;width:200px;}
+	.imageflow .loading_bar {background:#fff;height:15px;visibility:visible;width:1%;}
+	.imageflow .navigation{	z-index:10000;}
+	.imageflow .caption {font-weight:bold;position:relative; text-align:center;	z-index:10001;color:#fff;text-indent:-36px;}
+	.imageflow .scrollbar {border-bottom:1px solid white;position:relative; visibility:hidden;top:-7px;z-index:10002;height:1px;}
+	.imageflow .slider {background:url(http://www.s36.com/Activities/Slider_Images/slider.png) no-repeat;height:17px;margin:-8px 0 0 -7px;position:absolute;width:17px;z-index:10003;}
+	.imageflow .slideshow {cursor:pointer;height:14px;margin:20px 0 0 20px;position:absolute;width:14px;z-index:10003;}
+	.imageflow .slideshow.pause {background:url(http://www.s36.com/Activities/Slider_Images/button_pause.png) no-repeat;width:17px;height:17px;}
+	.imageflow .slideshow.play {background:url(http://www.s36.com/Activities/Slider_Images/button_play.png) no-repeat;width:17px;height:17px;}
+	.imageflow .images {overflow:hidden;white-space:nowrap;}
+	.imageflow .button {cursor:pointer;height:17px;position:relative;width:17px;}
+	.imageflow .previous {background: url(http://www.s36.com/Activities/Slider_Images/button_left.png) top left no-repeat;float:left;margin: -7px 0 0 -30px;}
+	.imageflow .next {background: url(http://www.s36.com/Activities/Slider_Images/button_right.png) top left no-repeat;float:right;	margin:-7px -30px 0 30px;}
+}
+/*div.tab_container .nextpage{display: block;width:770px;  float: left; text-align: center; font-size: 13px; height: 34px;}*/
+input.pager {border:0; outline:0; background:transparent;Color:#feb902;}
+input.pager:hover {color: #FFF;}
+a.numeric { color:#feb902;}
+a.numeric:hover {color:#FFF;}
+.pt_tit h3{font-weight:normal;font-size: 13px;	font-family:Microsoft YaHei;text-align:center; display:block;padding-bottom:5px;}

@@ -1,0 +1,560 @@
+﻿@charset "utf-8";
+/* CSS Document */
+/* Banner Image */
+.header-branding-image {
+    max-width: 400px;
+
+}
+
+/* CSS Document */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code,del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li,fieldset,  label, legend, table, caption, tbody, tfoot, thead, tr, th, td{margin:0; padding:0; border:0; outline:0;font-size:100%;}
+table {border-spacing: 1;width:auto;height:auto;}
+ul{list-style-type:none;}
+html,body{height:100%;font-family: "Helvetica Neue", Helvetica, "Microsoft Yahei", 微软雅黑, STXihei, 华文细黑, Arial, sans-serif;
+}
+body {font-size:12px;color:#FFF;background:#000 url(http://www.s36.com/images/boby-bg_new.jpg) no-repeat  center top fixed;}
+@font-face {
+    font-family: 'Glyphicons Halflings';
+    src: url(http://www.s36.com/fonts/glyphicons-halflings-regular.eot);
+    src: url(http://www.s36.com/fonts/glyphicons-halflings-regular.eot?#iefix) format('embedded-opentype'), url(http://www.s36.com/fonts/glyphicons-halflings-regular.woff2) format('woff2'), url(http://www.s36.com/fonts/glyphicons-halflings-regular.woff) format('woff'), url(http://www.s36.com/fonts/glyphicons-halflings-regular.ttf) format('truetype'), url(http://www.s36.com/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular) format('svg')
+}
+.bg_body_new {background:#000 url(http://www.s36.com/images/boby-bg_new.jpg) no-repeat  center top fixed;}
+.clear{clear:both;height:0;overflow:hidden;}
+.br{clear:both;height:0;font-size:0;line-height:0;}
+a{text-decoration: none;}
+img{border:0;display:block;}
+
+.Tmac_bg{background:#000 url(http://www.s36.com/images/TMAC-VALENCIA-7_bg.jpg) no-repeat  center top fixed;}
+.Tmac_bg_cn{background:#000 url(http://www.s36.com/images/TMAC-VALENCIA-7_bg.jpg) no-repeat  center top fixed;}
+.Tmac_bg_en{background:#000 url(http://www.s36.com/images/TMAC-VALENCIA-7_bg.jpg) no-repeat  center top fixed;}
+
+
+.sport_bg {background:#000 url(http://www.s36.com/images/SportsBook_page_bg.jpg) no-repeat  center top fixed;}
+.livegame_bg {background:#000 url(http://www.s36.com/images/livegame_page_bg.jpg) no-repeat  center top fixed;}
+.fish_bg{background:#010308 url(http://www.s36.com/images/fish_bg.jpg) no-repeat  center top;}
+.egame_bg {
+    background: #000 url(http://www.s36.com/images/egame_page_bg.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+/*--tinybox--*/
+.tbox {position:absolute; display:none; padding:5px; z-index:300000;background:#d0d0d0}
+.tinner {background:url(http://www.s36.com/Images/preload.gif) no-repeat center center;}
+.tmask {position:absolute; display:none; top:0px; left:0px; height:100%; width:100%; background:#000; z-index:200000}
+.tclose {position:absolute; top:3px; right:3px; width:30px; height:30px; cursor:pointer; background:url(http://www.s36.com/Images/close.png) no-repeat}
+.tclose:hover {background-position:0 -30px}
+#error {background:#ff6969; color:#fff; text-shadow:1px 1px #cf5454; border-right:1px solid #000; border-bottom:1px solid #000; padding:0}
+#error .tcontent {padding:10px 14px 11px; border:1px solid #ffb8b8; -moz-border-radius:5px; border-radius:5px}
+#success {background:#2ea125; color:#fff; text-shadow:1px 1px #1b6116; border-right:1px solid #000; border-bottom:1px solid #000; padding:10px; -moz-border-radius:0; border-radius:0}
+#bluemask {background:#4195aa}
+#frameless {padding:0}
+
+/*textbox*/
+.form{border:1px solid #434343;width:200px;height:18px;}
+.form2{border:1px solid #434343;width:173px;height:18px;}
+.form_s{border:1px solid #434343;width:80px;height:18px;}
+.form_btc{width:80px;height:18px;background-color:transparent; border:none;}
+.form_btc_line{width:80px;height:18px;border-bottom:1px solid #fff;}
+.btn-hidden{cursor: pointer;font-weight:bold; color:#fff;font-size:15px;width:116px;height:44px;line-height:42px;background-color:transparent; border:none;color:#fff;}
+.botton{width:116px;height:44px; background-image:url(http://www.s36.com/images/pt_btn.png); background-repeat:no-repeat;line-height:42px; text-align:center;font-weight:bold;font-size:15px; display:inline-block; overflow:hidden; }
+.botton a{color:#fff; display:block;overflow:hidden;height:44px;}
+.botton a:hover{background-image:url(http://www.s36.com/images/pt_btn_in.png); background-repeat:no-repeat;}
+.back_home {width:132px;height:47px; line-height:44px; text-align:center; background-image:url(http://www.s36.com/images/back_botton.png); background-repeat:no-repeat; margin:0 auto; }
+.back_home a{color:#fff; font-weight:bold;}
+.select{background-color:transparent;width:110px;height:20px;border:1px solid #333;color:#000;overflow:hidden;font-size:12px;font-family:'Microsoft YaHei UI';line-height:22px;}
+.select_a{background-color:#1e1e1e;width:96px;height:20px;border:1px solid #313131;color:#bf9201;overflow:hidden;font-size:12px;font-family:'Microsoft YaHei UI'; padding:3px;}
+.select2{width:204px;height:20px;border:1px solid #434343;}
+.textarea{width:320px;height:65px;border:1px solid #434343;}
+/* header */
+.header{width:1018px; margin:0 auto;position:relative; background-color:#545353;height:163px;}
+.header .cl{line-height:20px;float:right;position:absolute;right:10px;top:10px;text-align:center;}
+.header .cl li a{ color:#fff;font-weight:bold;white-space:normal}
+.header .cl li a:hover{ text-decoration:underline;color:#fcd432;}
+.header .logo{width:326px; position:absolute; left:20px;top:26px;}
+.header .logo .tm{background:url(http://www.s36.com/images/TM-LOGO.png) no-repeat;width:23px;height:12px;position:absolute;top:1px;left:230px;}
+.header .players{width:120px; position:absolute; left:204px;top:23px;}
+.ly_title {display:block;width:140px;height:65px;position:absolute;left:42px;top:0;overflow:hidden;text-indent:-300px; background : url(http://www.s36.com/images/blank.gif);}
+.bk_userform{width:532px;height:70px;background:url(http://www.s36.com/images/form_bg.png);float:right; position:relative;margin:14px 16px 0 0;}
+.bk_userlogin{font-size:12px;height:68px;float:right;padding-top:20px;}
+.mu a{color:#1a1a1a;height:32px;line-height:32px; font-size:14px;font-weight:bold;}
+.mu a:hover{color:#df9800;}
+.bk_userform .btn_free a{width:58px;height:53px;display:block;position:absolute;left:-60px; top:7px;background:url(http://www.s36.com/images/button_free.jpg);text-align:center;font-weight:bold;font-size:18px;color:#3e2c05;line-height:52px;}
+.bk_userform .btn_register{position:absolute;top:17px;left:22px;}
+.bk_userform .btn_register a{display:block;width:124px;height:35px; overflow:hidden;}
+.bk_userform form input{width:119px;height:25px;line-height:25px;text-indent:5px;border:none; background : url(http://www.s36.com/images/bk_userform_input.png); background-repeat:no-repeat;}
+.bk_userform div{overflow:hidden;}
+.form_bg{background-color:transparent;width:113px;line-height:24px;height:24px;text-indent:30px;border:none;color:#9e9e9e;font-family: "Helvetica Neue", Helvetica, "Microsoft Yahei", 微软雅黑, Arial, sans-serif;font-size:12px;}
+.form_bg_s{background-color:transparent;width:113px;line-height:24px;height:24px;text-indent:5px;border:none;color:#9e9e9e;font-family: "Helvetica Neue", Helvetica, "Microsoft Yahei", 微软雅黑, Arial, sans-serif;font-size:12px;}
+.form_bg_pass{background-color:transparent;width:113px;line-height:24px;height:24px;border:none;background:url(http://www.s36.com/images/password_en.png) 30px 6px  no-repeat;  color:#fff;font-size:0;}
+.form_bg_pass_chs{background-color:transparent;width:113px;line-height:24px;height:24px;border:none; background:url(http://www.s36.com/images/password_cn.png)  30px 8px  no-repeat;color:#ffffff;font-size:0;}
+.form_bg_pass_cht{background-color:transparent;width:113px;line-height:24px;height:24px;border:none; background:url(http://www.s36.com/images/password.png) 30px 6px  no-repeat; color:#ffffff;font-size:0;}
+.form_bg_pass_id{background-color:transparent;width:113px;line-height:24px;height:24px;border:none;background:url(http://www.s36.com/images/password_id.png) 30px 8px  no-repeat; color:#ffffff;font-size:0;}
+.bk_userform .account{position:absolute;left:177px;top:9px;width:113px;height:24px;}
+.bk_userform .code{position:absolute;left:296px;top:37px;width:113px;height:24px;}
+.bk_userform .password{position:absolute;left:296px;top:8px;width:113px;height:24px;}
+.bk_userform .securitycode{position:absolute;left:177px;top:36px;width:113px;height:24px; text-indent:0;}
+.bk_userform .btn_login{position:absolute;left:415px;top:8px;width:78px;height:27px;}
+.bk_userform .btn_login a{display:block;overflow:hidden; text-align:center;line-height:20px;color:#222222; font-size:12px;font-weight:bolder;background:url(http://www.s36.com/images/btn-login.png);}
+.bk_userform .btn_login a:hover{color:#000;background:url(http://www.s36.com/images/btn-login_a.png);}
+.bk_userform .btn_hidden{cursor: pointer;background-color:transparent; border:transparent;font-weight:bold;color:#222222; font-size:12px;width:78px;height:25px; font-family:Microsoft YaHei;}
+.bk_userform .btn_free_hidden {cursor: pointer;background-color:transparent; border:transparent;font-weight:bold;color:#222222; font-size:15px;width:52px;height:52px; font-family:Microsoft YaHei;margin:0;white-space: normal;}
+.bk_userform .btn_forgotpassword{position:absolute;left:415px;top:38px;}
+.bk_userform .btn_forgotpassword a{display:block;width:78px;height:20px;overflow:hidden;line-height:20px; text-align:center;font-size:12px;color:#fff;font-weight:bolder; }
+.join_member{float:left;background-image:url(http://www.s36.com/images/botton_3.jpg);background-repeat:no-repeat; width:293px;height:30px;line-height:26px; text-align:center;margin-top:6px;}
+.join_member a{color:#000; display:block;font-size:16px;font-weight:500;}
+.join_member a:hover{color:#fff;}
+.bk_userform .btn_forgotpassword a:hover{color:#fcd432;}
+.bk_mainmenu{position:absolute;top:85px;left:90px;width:850px; text-align:center; line-height:32px;}
+.bk_mainmenu .m a{display:block;width:83px;height:33px;padding-right:9px;float:left;font-size:15px;font-weight:bold;color:#222222;}
+.online-chat{position:absolute;top:138px;right:6px;background:url(http://www.s36.com/images/chat.png) center right no-repeat; height:18px;}
+.online-chat a{color:#fff;font-size:13px;line-height:20px;display:block;padding-right:25px;}
+.notice{position:absolute;top:134px;left:0;width:1018px;line-height:29px;font-size:13px;height:29px;background-color:#5d5d5e;}
+.notice dl dt{float:left;padding:0 8px 0 22px;}
+.notice dl span{padding-bottom:1px;border-bottom:2px solid #e5cb97;}
+.notice dl dd{float:left;width:76%;color:#fcd432;}
+.menu{position:absolute;top:97px;background:url(http://www.s36.com/images/menu_bg.png);height:35px;width:1018px;border-bottom:1px solid #4b4d52;border-top:1px solid #373636;font-size:11pt;}
+.menu ul{ background-repeat:no-repeat;line-height:34px;padding-left:8px;}
+.menu ul li{float:left;position:relative;}
+.menu .home a{background:url(http://www.s36.com/images/home-btn.png) center center no-repeat;width:50px;}
+.menu .home a:hover{background:url(http://www.s36.com/images/home-btn-active.png) center center no-repeat;}
+.menu .home.active{background:url(http://www.s36.com/images/menu_bg_a.png) repeat-x;width:50px;height:34px;}
+.menu .home.active a{background:url(http://www.s36.com/images/home-btn-active.png) center center no-repeat;width:50px;}
+.menu ul li a{ display:block;text-align:center;color:#000;height:35px;font-weight:bold;}
+.menu ul li span{padding:0 14px;height:34px;display:block;}
+.menu_en ul li span{padding:0 8px;height:34px;display:block;}
+.menu a:hover span{background:url(http://www.s36.com/images/menu_bg_a.png) repeat-x;color:#fcd432;}
+.menu .active a span{background:url(http://www.s36.com/images/menu_bg_a.png) repeat-x;color:#fcd432;}
+.menu .icon{ position:absolute;right:-10px;top:-5px;z-index:999;}
+.menu .p-icon{ position:absolute;left:0;top:0;background:url(http://www.s36.com/images/menu_p-icon.png) no-repeat;width:27px;height:35px;}
+.menu .p_m-icon{ position:absolute;left:0;top:0;background:url(http://www.s36.com/images/menu_m-icon.png) no-repeat;width:27px;height:35px;}
+.menu .p_bbs-icon{ position:absolute;left:0;top:0;background:url(http://www.s36.com/images/menu_bbs-icon.png) no-repeat;width:36px;height:35px;}
+
+.member{color:#cb9635; font-family:Verdana, Geneva, sans-serif;}
+.chn{position:absolute;top:2px;left:5px;width:96px;height:20px!important;}
+.chn .select{background-color:#fff;width:96px;height:21px;border:1px solid #6b6b6b;color:#fff;overflow:hidden;font-size:12px;font-family:'Microsoft YaHei UI';line-height:20px;padding-left:20px;background:#353535 url(http://www.s36.com/images/chn_icon.png) 4px 4px no-repeat;}
+.chn_icon{background:url(http://www.s36.com/images/chn_icon.png) 4px 4px no-repeat; }
+.idid_icon{background:url(http://www.s36.com/images/chn_icon.png) 4px -32px no-repeat; }
+.chn_display{display:none;}
+.c_list{background:#111111;border:1px solid #333;width:94px;}
+.c_list li{padding:0 4px;color:#bf9201; border-bottom:1px solid #2e2e2e;line-height:24px;height:24px;padding-left:24px;}
+.cn_icon{background:url(http://www.s36.com/images/chn_icon.png) 4px 6px no-repeat; }
+.id_icon{background:url(http://www.s36.com/images/chn_icon.png) 4px -30px no-repeat; }
+
+.money{color:#ffb021;}
+.um dd{float:right;}
+.banner_ps {width: 1016px; margin: 0 auto; position:relative;}
+.banner_power .a{ background-image:url(http://www.s36.com/images/power_bg_en.jpg); background-repeat:no-repeat;width:128px;height:26px; overflow:hidden;float:right;position:absolute;right:22px;top:6px;font-size:12px;color:#fff; text-align:center; line-height:24px;}
+.banner_power .a_on{ background-image:url(http://www.s36.com/images/power_bg_en.jpg); background-repeat:no-repeat;width:128px;height:26px; text-align:center; line-height:24px;  overflow:hidden;  position:absolute;right:22px; top:84px;display:none;}
+.banner_power .a b{ position:relative;top:-24px;}
+.banner_power .a_on b{position:relative;top:0;}
+.sports_banner_power .a{ background-image:url(http://www.s36.com/images/sport_btn_cn.jpg);width:45px;height:14px; overflow:hidden; text-indent:60px;background-position:center top;float:right;margin:2px;position:absolute;right:2px}
+.sports_banner_power .a_on{ background-image:url(http://www.s36.com/images/sport_btn_cn.jpg);width:45px;height:14px; overflow:hidden; background-position: 0 -14px; position:absolute;right:1px}
+.sports_banner_power .a_tw{ background-image:url(http://www.s36.com/images/sport_btn_tw.jpg);width:45px;height:14px; overflow:hidden; text-indent:60px;background-position:center top;float:right;margin:2px;position:absolute;right:2px}
+.sports_banner_power .a_on_tw{ background-image:url(http://www.s36.com/images/sport_btn_tw.jpg);width:45px;height:14px; overflow:hidden; background-position: 0 -14px; position:absolute;right:1px}
+.sports_banner_power .a_en{ background-image:url(http://www.s36.com/images/sport_btn_en.jpg);width:45px;height:14px; overflow:hidden; text-indent:60px;background-position:center top;float:right;margin:2px;position:absolute;right:2px}
+.sports_banner_power .a_on_en{ background-image:url(http://www.s36.com/images/sport_btn_en.jpg);width:45px;height:14px; overflow:hidden; background-position: 0 -14px; position:absolute;right:1px}
+/* main */
+.main_body{width:1018px; margin:0 auto;background-color:#2c2c2c;}
+.main_pd{padding-top:16px!important;}
+.main_content001{width:1018px;font-size:14px;line-height:24px;}
+.main_content001 .mc{padding:0 20px 25px 30px;color:#FFF;}
+.main_content001 .EG{padding:0 10px 0 25px;height:523px;color:#FFF;}
+.main_content001 .tit{line-height:44px;font-size:16px;padding-left:36px; font-weight:bold;height:50px; background-image:url(http://www.s36.com/images/tit002.png);background-position:right top ; background-repeat:no-repeat;}
+.main_content001 .tit_e{line-height:44px; height:50px;}
+.main_content001 .tit_re{line-height:36px;font-size:16px; font-weight:bold;height:38px;}
+.main_content001 .pf_tit{line-height:32px;font-size:16px; font-weight:bold;height:45px; position:relative;}
+.main_content001 .tit3{line-height:34px;font-size:16px; font-weight:bold;height:45px;}
+.main_content001 .tit2{font-size:16px; font-weight:bold; text-align:center;}
+.main_content001 .tit4{font-size:16px; font-weight:bold;line-height:40px;}
+.main_content001 .bar{font-size:14px;line-height:20px;padding:10px 0 25px 0;}
+.main_content001 .right5{padding-right:5px; text-align:left;}
+.main_content001 .line_ps{padding-left:15px;}
+.main_content001 .bannerline{background-image:url(http://www.s36.com/images/banner_line.jpg); background-repeat:repeat-x;height:10px;width:988px;margin-left:15px;}
+.main_content001 .line{background-image:url(http://www.s36.com/images/down_line001.jpg); background-repeat:repeat-x;height:5px;width:985px;}
+.banner_home_bg{background-image: url(http://www.s36.com/images/banner_home_bg.jpg);background-repeat: no-repeat;width:790px;height:303px;}
+.banner_home_bg dl dd{width:253px;padding:4px 0 0 7px; float:left; position:relative; line-height:20px;font-size:18px;font-weight:bolder; text-align:right;}
+.banner_home_bg .EGlink a{ position:absolute;top:4px; left:7px; z-index:2000;}
+.banner_home_bg .jackpot_flash{position:absolute;top:4px;left:7px;}
+.banner_home_bg .jackpot_1{position:absolute;top:126px;right:24px;width:136px;height:20px;}
+.banner_home_bg .jackpot_2{position:absolute;top:159px;right:24px;width:136px;height:20px;}
+.banner_home_bg .jackpot_3{position:absolute;top:192px;right:24px;width:136px;height:20px;}
+.banner_home_bg .jackpot_4{position:absolute;top:225px;right:24px;width:136px;height:20px;}
+.banner_home_bg .jackpot_5{position:absolute;top:258px;right:24px;width:136px;height:20px;}
+.banner_home_bg .ps{ position:absolute;padding-top:260px; color:#feb902; font-family:Arial; padding-left:40px;}
+.banner_home_bg .ps dt{width:50px;font-size:20px;font-weight:bold;float:left;padding-left:60px;}
+.banner_home_bg .ps dd{font-size:15px;font-weight:bold;float:left;}
+
+.h-banner{width:738px; height:260px; background:url(http://www.s36.com/Images/h-banner_shadow.png) center bottom;position:relative;margin-left:8px;float:left;}
+.h-hotgame{width:250px;height:260px;float:left;margin-left:13px;font-size:13px;}
+.h-hotgame .h-tabs{height:32px;background:#1e1e1e;}
+.h-hotgame .h-tabs ul{padding-top:4px;}
+.h-hotgame .h-tabs li{float:left; line-height:25px;padding-right:4px;width:98px;}
+.h-hotgame .h-tabs a{color:#e19b03;font-weight:bold;font-size:14px;display:block;text-align:center;height:28px;width:98px;}
+.h-hotgame .h-tabs a:hover{background:#515151 url(http://www.s36.com/Images/h-icon.png) center bottom no-repeat;color:#fff;}
+.h-hotgame .h-tabs .active{background:#515151 url(http://www.s36.com/Images/h-icon.png) center bottom no-repeat;color:#fff;}
+.h-hotgame .h-tabs li.n{padding-right:0;line-height:28px;width:20px;}
+.h-hotgame .h-tabs li.n a{padding:0 12px;width:22px;}
+.h-hotgame .h-tabs li.n a:hover{background:#515151;color:#e19b03;}
+.h-hotgame .h-tabs_content{background:none;display:none;}
+.h-hotgame .h_content{height:204px;background-color:#393a3c;}
+.h-hotgame .h-g{}
+.h-hotgame .h-g dl{padding:5px 10px;border-bottom:1px solid #2e2e2e;border-top:1px solid #4d4e50;height:55px;background:url(http://www.s36.com/Images/hot-t_bg.jpg) center center no-repeat;}
+.h-hotgame .h-g dl dt{float:left;padding-right:12px;}
+.h-hotgame .h-g dl dd{float:left;width:150px;height:34px;padding:10px 0;overflow:hidden;}
+.h-hotgame .h-g dl dd span{display:block;color:#e19b03;}
+.h-hotgame dl.b-b{border-bottom:none;}
+.h-hotgame dl.b-t{border-top:none;}
+.h-hotgame .bottom-shadow{height:15px;background: url(http://www.s36.com/Images/left-panel-shadow.png) center top no-repeat;}
+.h-win {padding:2px 0;height:196px;
+}
+.maquee{height:196px;overflow:hidden;}
+::-webkit-scrollbar-track-piece{
+	background-color:#393a3c;
+	-webkit-border-radius:0;
+}
+::-webkit-scrollbar{
+	width:8px;
+	height:6px;
+}
+::-webkit-scrollbar-thumb{
+	height:50px;
+	background-color:#1e1e1e;
+	-webkit-border-radius:6px;
+	outline:1px solid #000;
+	outline-offset:-2px;
+	border: 1px solid #515151;
+}
+::-webkit-scrollbar-thumb:hover{
+	height:30px;
+	background-color:#9f9f9f;
+	-webkit-border-radius:1px;
+}
+.h-win dl{padding:14px 12px;height:38px;background:url(http://www.s36.com/Images/left-panel-bg.png) center center no-repeat;}
+.h-win dt,.h-win dd{float:left;height:32px;}
+.h-win dt{width:53%;padding-left:2px;}
+.h-win dd{width:45%;text-align:center;line-height:30px;color:#000;font-weight:bold;}
+.h-win dl dt span{display:block;color:#e19b03;}
+.h-fl{float:left;height:53px;padding-bottom:18px;}
+.h-tj{position: relative; height:76px; width:98%;background:url(http://www.s36.com/Images/jackpot_bg.png) no-repeat;float:left;padding:2px 0 0 17px;margin-left: 7px;}
+.h-try a{height:56px;width:332px;background:url(http://www.s36.com/Images/SATrial.png) no-repeat;display:block;color:#fff;font-size:14px;line-height:56px; vertical-align:text-top;}
+.h-try a:hover{color:#fcd432;background:url(http://www.s36.com/Images/SATrial_o.png) no-repeat;}
+.h-try span{font-size:25px;padding:0 16px 0 108px;font-weight:bold;float:left;}
+.h-jacpot{ height: 53px; width: 408px; background: url(http://www.s36.com/Images/jackpot2-gif.gif)  3px 6px no-repeat; padding: 3px 0 5px 255px;}
+.h-jacpot p{display: inline-block; width: 420px; height: 35px; text-align: right; letter-spacing: 23.5px; line-height: 35px; color: #000; font-size: 30px; font-weight: bold; padding: 8px 0px;}
+.h-game{position:relative;float:left;width:1018px;}
+.h-game p{position:absolute;top:6px;left:10px;}
+.h-game a{display:block;/*background:url(http://www.s36.com/Images/h-g_icon.png) bottom right no-repeat;*/float:left;color:#adadad;padding-top:14px;}
+.h-game a b{display:none;}
+.h-game a:hover{color:#fcd432;/*background:url(http://www.s36.com/Images/h-g_icon_a.png) bottom right no-repeat;*/}
+.h-game a:hover span{color:#fcd432;}
+.h-game a.s-1{padding-left:62px;width:100px;}
+.h-game a.s-2{padding-left:60px;width:115px;}
+.h-game a.s-3{padding-left:76px;width:110px;}
+.h-game a.s-4{padding-left:52px;width:123px;}
+.h-game a.s-5{padding-left:40px;width:100px;}
+.h-game a.s-6{padding-left:70px;width:96px;}
+.h-game a span{display:block;font-size:16px;font-weight:bold;padding-bottom:6px;color:#f5f5f5;}
+
+
+.h-act{height:286px;padding-top:18px;float:left;border-bottom:1px solid #1a1a1a;width:1004px;padding-left:14px;}
+.h-act .a-bg{background:url(http://www.s36.com/Images/h-act-bg4.png) center top no-repeat;width:330px;height:276px;float:left;position:relative;}
+.h-act .a-bg h3{text-align:center;font-size:16px;display:block;position:absolute;bottom:33px;right:35px;}
+.h-act .a-pn{margin-right:0!important;}
+.return_btn{text-align: center; width: 910px; background-image: url(http://www.s36.com/images/pf_up.png);background-repeat: no-repeat; background-position: 508px 6px;}
+.main_pf{width:1015px;padding-left:1px; background-image:url(http://www.s36.com/images/Preferential_bg.jpg); background-repeat:no-repeat; background-position:left top;}
+.main_pf .mc{}
+.main_pf .mc2{padding-left:17px;}
+.main_pf .tit{line-height:30px;font-size:16px; padding-left:17px;font-weight:bold;height:37px;}
+.main_pf .tit2{line-height:36px;}
+.main_ad{float:left;padding-left:10px;}
+.main_ad2{float:right;padding-right:10px;}
+.main_left{width:790px;padding-left:1px;float:left;}
+.main_right{width:226px;height:603px;float:left; position:relative;}
+.main_right p{position:absolute;left:6px;top:3px;}
+.main_right p a{width:212px;height:94px;display:block;background:url(http://www.s36.com/images/button.gif);}
+.main_right p a.trial{height:30px;}
+.h_sports_ps{position:absolute;z-index:1200; width:750px;height:270px;}
+.left{float:left;}
+.c_line{ background-image:url(http://www.s36.com/images/c_line.jpg); background-repeat:repeat-x; background-position:bottom;height:20px;}
+.banner_ad{height:88px;width:100%;}
+.banner_ad dl dt{float:left; padding-left:10px;}
+.banner_ad dl dd{float:right; padding-right:10px;}
+.color_y{color:#e3ab0e;font-weight:bold;}
+.color_yellow{color:#e3ab0e;}
+.mp_ps{font-size:14px; line-height:23px;}
+.back_main a{color:#fff;}
+.red{color:#feb902;font-size:12px;}
+.redd{color:#feb902;font-size:12px; font-family:Arial;}
+.red_2{color:#feb902;}
+.c_r01{color:#feb902;font-size:12px;line-height:13px;}
+.tit_f16{font-size:16px;}
+.RL{float:left;padding:2px;}
+.TF{ height:28px; text-align:right; background-color:#4C4C4C; width:330px; padding-right:5px;}
+.TF2{ text-align:right; background-color:#4C4C4C; width:300px; text-align:center;}
+
+
+
+
+.cs_f{font-size:16.5px;font-family:Arial, Helvetica, sans-serif;}
+.terms{padding-left:380px;height:70px;}
+.terms dl{float:left;}
+.tgc{width:400px; text-align:center;font-size:16px;color:#fff;font-weight:bold;height:30px;padding-top:15px;}
+.link a{ text-decoration:underline;color:#e3ab0e;}
+.b_up{text-align: center; width: 942px; background-image: url(http://www.s36.com/images/pf_up.png);background-repeat: no-repeat; background-position: 526px 6px;}
+.td_gm{background-color:#222222;padding:0 15px 0 5px;height:28px; text-align:center;}
+.td_gm2{ background-color:#4C4C4C;padding:0 15px 0 5px;height:28px;}
+.website{width:940px;}
+.ws_menu_home{font-size:16px;padding:8px 0 0 10px;}
+.ws_menu_home a{color:#fff;}
+.ws_menu_home a:hover{color:#feb902;}
+.website .ws_menu{float:left;padding-right:40px;}
+.website .ws_menu dt{font-size:16px;padding-bottom:4px;}
+.website .ws_menu dd{padding-left:2px;}
+.website .ws_menu dl a{color:#fff;}
+.website .ws_menu dl a:hover{color:#feb902;}
+.website .ws_tit{font-size:16px;color:#feb902; padding:8px 0 0 10px;font-weight:bold;}
+.website_top{height:14px; background-image: url(http://www.s36.com/images/WebSite_top_bg.png);background-repeat: no-repeat;}
+.website_bg{background-image: url(http://www.s36.com/images/WebSite_bg.png); padding:2px 22px 2px 22px;}
+.website_bottom{height:18px; background-image: url(http://www.s36.com/images/WebSite_down_bg.png);background-repeat: no-repeat;}
+.lt_tabs{width:33px;height:384px;float:left;margin:0;padding:0;}
+.lt_tabs dd{margin:0;padding:0;float:left;cursor:pointer;}
+.lt_tabs dd.tab{position:relative; z-index:1;}
+.lt_tabwraps{margin:0;}
+.lt_tabwraps dd.wrp{margin:0;padding:0;display:none;}
+.lt_tabwraps dd.wrp_active{display:block;}
+.lt_tabs2{width:100%;margin:0;padding:0;}
+.lt_tabs2 dd{margin:0;padding:0;float:left;cursor:pointer;}
+.color_red{ color:Red;}
+.table-style{color:#fff;}
+.table-style table{ text-align:center;}
+.table-style table tr td{ background-color:#434343;padding:5px;border:1px solid #868686;}
+.sports_loading{width:120px;margin:0 auto;padding-top:300px;}
+.sports_loading dl dd{float:left;padding-right:5px;line-height:32px; color:#b4b4b4;font-size:13px;}
+.pf_more a{line-height:30px;color:#feb902;font-size:16px; font-weight:bold;padding-left:12px;}
+.pf_more a:hover{color:#000;}
+.down{width:1018px;}
+.bk_footcontents{width:1000px;padding-left:15px;}
+.bk_footcontents .inr{position:relative; padding:0 0 8px 8px;font-size:12px; font-family:Arial, Helvetica, sans-serif;line-height:16px;color:#000;}
+.bk_footcontents .inr a{color:#fff;}
+.bk_footcontents .inr a:hover{color:#a2a2a2;}
+.bk_footcontents .col{float:left;width:335px;}
+.bk_footcontents .col2{float:left;width:335px;}
+.bk_footcontents .col3{float:left;width:290px;}
+.bk_footcontents .col .text{padding-right:33px;}
+.bk_footcontents .col2 .text{padding-right:33px;}
+.bk_tit{height:25px; padding-left:8px;line-height:22px;font-weight:bold;font-size:14px;color:#fff;}
+.bk_tit2{font-weight:bold;font-size:13px;}
+.bk_footmenu{width:1000px;height:49px;margin:0 auto;line-height:48px;margin-top:10px;}
+.bk_footmenu dl{float:left;padding-left:0px;}
+.bk_footmenu dl dd{float:left;padding-right:8px;}
+.bk_footmenu dl dd a{display:block;background-image:url(http://www.s36.com/images/down_line.jpg); background-repeat:no-repeat; background-position:right; font-weight:bold;float:left;width:70px;height:49px;color:#111111;font-size:14px; }
+.bk_footmenu dl dd.m6 a{width:43px;}
+.bk_footmenu .links{float:right;padding-right:14px;}
+.bk_footmenu .links a{display:block;width:102px;height:49px;float:right;}
+.down_bg{ background-image:url(http://www.s36.com/images/down_bg_m.jpg); background-repeat:repeat-y;}
+.down_bg_top{ background-image:url(http://www.s36.com/images/down_bg_top.jpg); background-repeat:no-repeat; background-position:top;}
+.down_bg_down{ background-image:url(http://www.s36.com/images/down_bg_botton.jpg); background-repeat:no-repeat; background-position:bottom;}
+.kf a{color:#e3ab0e;}
+.kf a:hover{color:#000;}
+.padding-5{padding:0 5px 0 5px}
+.ojs{position:absolute;left:240px;top:3px;width:300px;height:58px;}
+.ojs_cn{color:#fff;font-weight:bold;font-size:13px; font-family:Arial;position:absolute;}
+.ojs_cn dl{padding:12px 0 0 101px;}
+.ojs_cn dd{width:30px; text-align:center;padding-right:17px;float:left;}
+/* footer */
+.footer{ background-color:#393a3c;width:998px; padding:10px;}
+.footer .line{ height:5px;border-bottom:1px solid #878787;}
+.footer .act{width:1000px;z-index:99;margin:0 auto;}
+.footer .act ul li{float:left;margin:10px 12px ;height:70px;overflow:hidden;position:relative;width:225px;}
+.footer .act a{display:block;height:70px;overflow:hidden;}
+.footer .act a:hover img{position:absolute;top:-70px;}
+.footer .icon{width:100%;margin:16px 0;background:url(http://www.s36.com/images/icon.png) no-repeat;height:52px;}
+.footer .icon a{height:52px;display:block;float:left;}
+.footer .icon-b{height:32px;width:100%;margin:10px 0;}
+.footer .icon-b ul li{padding-right:12px;display:inline-block;height:32px;}
+.footer .icon-c{height:42px;margin-top:10px;background:url(http://www.s36.com/images/ie_icon.png) left center no-repeat;}
+.footer .icon-c a{height:42px;width:44px;display:block;float:left;background:url(http://www.s36.com/images/button.gif);}
+.footer .copyright{height:28px;padding:10px 0;line-height:28px;}
+.footer .logo_icon{padding:6px;}
+.footer .logo_icon a{float:left;display:block;height:40px;width:140px!important;}
+.footer .logo_icon a.salon{width:75px;background:url(http://www.s36.com/images/salon.png) center center no-repeat;}
+.footer .logo_icon a.salon:hover{width:75px;background:url(http://www.s36.com/images/salon_a.png) center center no-repeat;}
+.footer .logo_icon a.sc{width:74px;background:url(http://www.s36.com/images/1scasino-g.png) center center no-repeat;}
+.footer .logo_icon a.sc:hover{width:74px;background:url(http://www.s36.com/images/1scasino.png) center center no-repeat;}
+.footer .logo_icon a.opus{width:92px;background:url(http://www.s36.com/images/opusgaming-g.png) center center no-repeat;}
+.footer .logo_icon a.opus:hover{width:92px;background:url(http://www.s36.com/images/opusgaming.png) center center no-repeat;}
+.footer .logo_icon a.hg{width:80px;background:url(http://www.s36.com/images/hogaming-g.png) center center no-repeat;}
+.footer .logo_icon a.hg:hover{width:80px;background:url(http://www.s36.com/images/hogaming.png) center center no-repeat;}
+.footer .logo_icon a.bs{width:72px;background:url(http://www.s36.com/images/betsoft-g.png) center center no-repeat;}
+.footer .logo_icon a.bs:hover{width:72px;background:url(http://www.s36.com/images/betsoft.png) center center no-repeat;}
+.footer .logo_icon a.pt{width:104px;background:url(http://www.s36.com/images/playtech-logo-g.png) center center no-repeat;}
+.footer .logo_icon a.pt:hover{width:104px;background:url(http://www.s36.com/images/playtech-logo.png) center center no-repeat;}
+.footer .logo_icon a.pg{width:95px;background:url(http://www.s36.com/images/play-n-go-g.png) center center no-repeat;}
+.footer .logo_icon a.pg:hover{width:95px;background:url(http://www.s36.com/images/play-n-go.png) center center no-repeat;}
+.footer .logo_icon a.ag{width:69px;background:url(http://www.s36.com/images/AG-g.png) center center no-repeat;}
+.footer .logo_icon a.ag:hover{width:69px;background:url(http://www.s36.com/images/AG.png) center center no-repeat;}
+.footer .logo_icon a.inplay{width:79px;background:url(http://www.s36.com/images/inplaymatrix-g.png) center center no-repeat;}
+.footer .logo_icon a.inplay:hover{width:79px;background:url(http://www.s36.com/images/inplaymatrix.png) center center no-repeat;}
+.footer .logo_icon a.allbet{width:63px;background:url(http://www.s36.com/images/allbet-g.png) center center no-repeat;}
+.footer .logo_icon a.allbet:hover{width:63px;background:url(http://www.s36.com/images/allbet.png) center center no-repeat;}
+.footer .logo_icon a.gp{width:117px;background:url(http://www.s36.com/images/Gameplay-g.png) center center no-repeat;}
+.footer .logo_icon a.gp:hover{width:117px;background:url(http://www.s36.com/images/Gameplay.png) center center no-repeat;}
+.footer .logo_icon a.qtech{width:111px;background:url(http://www.s36.com/images/Qtech-g.png) center center no-repeat;}
+.footer .logo_icon a.qtech:hover{width:111px;background:url(http://www.s36.com/images/Qtech.png) center center no-repeat;}
+.footer .logo_icon a.sbobet{width:104px;background:url(http://www.s36.com/images/sbobet-g.png) center center no-repeat;}
+.footer .logo_icon a.sbobet:hover{width:104px;background:url(http://www.s36.com/images/sbobet.png) center center no-repeat;}
+.footer .logo_icon a.ebet{width:88px;background:url(http://www.s36.com/images/ebet-g.png) center center no-repeat;}
+.footer .logo_icon a.ebet:hover{width:88px;background:url(http://www.s36.com/images/ebet.png) center center no-repeat;}
+.footer .logo_icon a.gd{width:81px;background:url(http://www.s36.com/images/GoldDeluxe-g.png) center center no-repeat;}
+.footer .logo_icon a.gd:hover{width:81px;background:url(http://www.s36.com/images/GoldDeluxe.png) center center no-repeat;}
+.footer .logo_icon a.isoftbet{width:100px;background:url(http://www.s36.com/images/isoftbet-g.png) center center no-repeat;}
+.footer .logo_icon a.isoftbet:hover{width:100px;background:url(http://www.s36.com/images/isoftbet.png) center center no-repeat;}
+.footer .logo_icon a.sunbet{width:77px;background:url(http://www.s36.com/images/sunbet-g.png) center center no-repeat;}
+.footer .logo_icon a.sunbet:hover{width:77px;background:url(http://www.s36.com/images/sunbet.png) center center no-repeat;}
+.footer .nav{padding:10px 10px 5px 20px;}
+.footer .nav .w-h{float:left;}
+.footer .nav .w-h dt{color:#fff;font-size:13px;font-weight:bold;padding-bottom:6px;height:20px;}
+.footer .nav .w-h dd{line-height:20px;padding:3px 0px; }
+.footer .nav .w-a{padding-right:66px;}
+.footer .nav a{color:#fff;display:inline-block;word-wrap:break-word}
+.footer .nav a:hover{color:#fcd432;}
+.footer .nav .follow a{padding-left:17px;background:url(http://www.s36.com/Images/follow_icon.png) no-repeat;}
+.footer .nav a.tencent{background-position:0 4px;}
+.footer .nav a.youtube{background-position:0 -20px;}
+.footer .nav a.weibo{background-position:0 -45px;}
+.footer .nav a.google{background-position:0 -69px;}
+.footer .nav a.fb{background-position:0 -93px;}
+.footer .nav a.twitter{background-position:0 -117px;}
+.footer .nav table tr td{line-height:16px;padding:2px 0px; margin:0;}
+.footer .nav table{ margin:0;padding:0;}
+.footer .nav_en{font-family:Arial;  }
+.footer .nav_en .w-a{padding-right:26px!important;}
+.footer .nav_id{font-family:Arial; }
+.footer .nav_id .w-a{padding-right:12px!important;}
+
+
+.qq_img{background-image:url(http://www.s36.com/images/qq.png);padding-left:20px;color:#000; background-repeat:no-repeat;}
+.sb_footer_display{margin:0 auto;width:1015px;}
+/* Amlish */
+.lr-5{padding:3px 5px 3px 5px;}
+.Am_tit{line-height:34px; text-align:center;font-size:16px; color:#000;}
+/* script addition 5/14/2013 */
+.Am_tit0 { background:url(Amlisttop_bg.jpg) 0 0 no-repeat; line-height:34px; text-align:center; margin-left:30px; font-size:16px; color:#000;}
+.Am_pointer{position:relative;background:url(http://www.s36.com/images/icon002.png) 0 0 no-repeat; top:5px; left:-10px; width:12px; height:12px; padding:0 5px; display:inline; }
+.extFrame {height:776px; width:725px; border:0; padding:0; margin:0; }
+.leftPane {position:relative; left:-14px; height:auto !important; border:1px #000 solid; width:725px; padding:10px; margin:10px 0 0 25px; background:#fff; }
+.rightPane {position:relative; left:-6px; margin:11px 11px 0px;  height:inherit; width:226px; float:right; }
+.bottomPane {position:relative; height:auto; top:5px; width:226px; background-color:#6a6e77; padding-left:3px; padding-top:7px; border:1px #969696 solid;}
+.rightPane a img{margin-bottom:5px; border:none; }
+.content_txt span{line-height:24px;}
+.content_txt h2{font-weight:bold;line-height:34px;}
+.content_txt dt{width:16px;float:left;padding-left:16px;}
+.content_txt dd{width:880px;float:left;}
+.content_txt{font-size:14px;line-height:18px;width:920px;}
+.c_txt34{font-size:14px;color:#feb902;text-align:center;font-family:Arial;width:940px;background-image:url(http://www.s36.com/images/c_line.jpg); background-repeat:repeat-x; background-position:bottom;height:24px;}
+.c_h8{height:8px;}
+.onlinecs2{height:0px; position:relative;width:1000px;margin:0 auto;}
+.onlinecs{height:1px;width:1010px; position:absolute; }
+.onlinecs .ps{position:absolute;right:-49px;width:45px;height:180px;top:-12px;}
+.onlinecs .ps2{position:absolute;left:-101px;top:-6px; width:101px;height:420px;}
+.onlinecs .ps span{display:block;padding-top:155px;text-align:center;font-size:15px;font-weight:bolder;color:#000;height:26px; }
+.onlinecs .ps a{display:block;text-align:center;font-size:14px;font-weight:bolder;color:#000;text-decoration:none;}
+.onlinecs .ps .close{color:#d1d1d1; font-size:12px;padding:10px 0 0 14px; display:block;}
+.onlinecs .ps2 .close {display:block;position:relative;top:22px;left:3px; width:20px;height:20px;z-index:2000;}
+.dc_onlinecs{height:1px;width:100%;position:absolute;top:220px;z-index:100000;}
+.dc_onlinecs .cwrp{position:relative;width:400px;height:250px;background:url(http://www.s36.com/Images/liveperson.png); background-repeat:no-repeat; margin:0 auto; overflow:hidden;}
+.dc_onlinecs .cwrp div{color:#000;font-weight:bolder;}
+.dc_onlinecs .cwrp div .lv_btns{padding:65px 0 70px 185px;}
+.dc_onlinecs .cwrp div .lv_btns p{font-size:24px;letter-spacing:2pt;}
+.dc_onlinecs .cwrp div .lv_tel{width:240px;padding-left:188px;}
+.dc_onlinecs .cwrp div .lv_tel p{ display:block;font-size:12px;padding:0;letter-spacing:0; height:20px;}
+.dc_onlinecs .cwrp div .lv_tel p label{width:70px;display:block;float:left;}
+.dc_onlinecs .cwrp div .lv_tel p span{}
+.dc_onlinecs .cwrp div .lnks{height:38px;position:absolute;bottom:100px;left:198px;}
+.dc_onlinecs .cwrp div .lnks a{display:block;width:70px;height:38px;float:left;text-align:center;font-size:15px;font-weight:bolder;color:#000;line-height:38px;}
+.dc_onlinecs .cwrp div .lnks .ent{margin-left:7px;}
+.dc_onlinecs .cwrp div .lnks .cnl{margin-left:11px;}
+.s_wrp_on{display:none;}
+.back{background-image:url(http://www.s36.com/Activities/Slider_Images/back_bg.png);background-repeat:no-repeat;height:330px; padding:30px 0 0 22px;}
+.imageflowa{width:938px;height:334px;overflow:hidden;margin:0 auto; }
+.imageflowa .navigation{position:relative;top:60px;}
+.imageflowa .imageflow{top:15px;}
+/* home_picshow */
+.picshow{position:relative;z-index:1;height:289px;width:253px;overflow:hidden;}
+.picshow .picwrap li{position:absolute;left:0px;top:0px;width:253px;height:230px;}
+.picshow .picwrap li.hide{display:none;}
+.picshow .picwrap li img{width:253px;height:230px;}
+.picshow .butt{position:absolute;left:1px;bottom:0px;width:100%;height:59px;text-align:center;overflow:hidden;}
+.picshow .butt ul{position:absolute;left:0;top:0px;text-align:center;zoom:100%;}
+.picshow .butt li{position:relative;float:left;display:inline;width:84px;height:59px;opacity:0.5;filter:alpha(opacity=50);}
+.picshow .butt li img.menu_b{width:84px;height:59px;cursor:pointer;position:absolute;}
+.picshow .butt li img.bg{position:absolute;left:0px;top:0px;cursor:pointer;}
+.picshow .butt li.on{opacity:1;filter:alpha(opacity=100);}
+/*Slide_minshow_home*/
+#slides, #slides2, #slides3  {position:absolute;top:7px;left:21px;z-index:1100;}
+.slides_container {width:288px;overflow:hidden;position:relative;display:none;}
+.slides_container a {width:288px;height:201px;display:block;}
+.slides_container_h a img {width:288px;height:201px;}
+.pagination {padding:0;margin:0;position:absolute;bottom:-32px;left:10px; z-index:1000;}
+.pagination li {margin:0 1px;list-style:none;display:inline;}
+.pagination li a {display:inline-block;width:15px;height:2px;padding-top:12px;background-image:url(http://www.s36.com/Images/pagination_2.png);background-position:0 0;overflow:hidden;text-align:center;}
+.pagination li.current a {background-position:0 -14px;}
+/*wowslider*/
+.arrow{ background: url('http://www.s36.com/images/arrow.png') no-repeat left bottom transparent;position: relative;float:left;z-index: 2;height:20px;width: 40px;top: -20px;right: -30px;}
+@keyframes wsBasic{0%{left:-0%} 8.93%{left:-0%} 12.5%{left:-100%} 21.43%{left:-100%} 25%{left:-200%} 33.93%{left:-200%} 37.5%{left:-300%} 46.43%{left:-300%} 50%{left:-400%} 58.93%{left:-400%} 62.5%{left:-500%} 71.43%{left:-500%} 75%{left:-600%} 83.93%{left:-600%} 87.5%{left:-700%} 96.43%{left:-700%} }
+@-moz-keyframes wsBasic{0%{left:-0%} 8.93%{left:-0%} 12.5%{left:-100%} 21.43%{left:-100%} 25%{left:-200%} 33.93%{left:-200%} 37.5%{left:-300%} 46.43%{left:-300%} 50%{left:-400%} 58.93%{left:-400%} 62.5%{left:-500%} 71.43%{left:-500%} 75%{left:-600%} 83.93%{left:-600%} 87.5%{left:-700%} 96.43%{left:-700%} }
+@-webkit-keyframes wsBasic{0%{left:-0%} 8.93%{left:-0%} 12.5%{left:-100%} 21.43%{left:-100%} 25%{left:-200%} 33.93%{left:-200%} 37.5%{left:-300%} 46.43%{left:-300%} 50%{left:-400%} 58.93%{left:-400%} 62.5%{left:-500%} 71.43%{left:-500%} 75%{left:-600%} 83.93%{left:-600%} 87.5%{left:-700%} 96.43%{left:-700%} }
+#wowslider-container1 .ws_shadow{background: url('http://www.s36.com/images/arrow.png') left 100%;background-repeat: no-repeat;	background-size:100%;width:100%;height:20%;position: absolute;	left:0;	bottom:-20%;z-index:-1;}
+* html #wowslider-container1 .ws_shadow{/*ie6*/	background:none;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader( src='engine1/shadow.png', sizingMethod='scale');}
+*+html #wowslider-container1 .ws_shadow{/*ie7*/	background:none;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader( src='engine1/shadow.png', sizingMethod='scale');}
+/* PlayTech MobilePage*/
+.popup{width:397px;height:118px;background:url(http://www.s36.com/Images/mobile/popup.jpg);color:#fbffd7}
+.popup p{padding:30px 0 0 110px;line-height:27px;font-size:15px;}
+.popup p a{color:#fbffd7; text-decoration:underline;}
+.popup_pw{width:397px;height:118px;background:url(http://www.s36.com/Images/mobile/popup_pw.jpg);color:#fbffd7;position:relative;top:75px;left:14%;}
+.popup_pw div{padding:30px 0 0 30px;line-height:27px;font-size:15px;position:absolute;}
+.popup_pw #btn_close_owp{color:#fbffd7;float:right;padding-right:10px;position:relative;top:-80px;}
+.ui-tabs_mobile{background:none;display:none;float:right;height:150px;width:980px;}
+
+.rides-cs {position:absolute;top:133px; right:0;z-index: 9999;}
+.rides-cs .floatL {float:left; position: relative; z-index:9998;height:30px;top:0;background: url(http://www.s36.com/images/onlincsimg_a.jpg) left top no-repeat;line-height:30px;font-weight:bold;}
+.rides-cs .floatL_b {background: url(http://www.s36.com/images/onlincsimg_a.jpg) left bottom!important;}
+.rides-cs .floatL a{color:#000;background: url(http://www.s36.com/images/onlinecsimg02.png) right no-repeat;padding:0 34px 0 25px;font-size:14px;}
+.rides-cs .floatR {width:344px;height:200px;z-index:9999;position:absolute;right:0px;top:30px;}
+.rides-cs .floatR .c_t{width:344px;height:200px;}
+.rides-cs .floatR .c_t .links a{position:absolute;display:block;width:90px;height:24px;background: url(http://www.s36.com/images/botton.gif) }
+.rides-cs .floatR .c_t .links a.a1{left:234px;top:25px;}
+.rides-cs .floatR .c_t .links a.a2{left:234px;top:62px;}
+.rides-cs .floatR .c_t .links a.a3{left:234px;top:97px;}
+.rides-cs .floatR .c_t .links a.a4{left:122px;top:145px;}
+.rides-cs .floatR .c_t .links a.a5{left:232px;top:145px;}
+.rides-cs .btnOpen, .rides-cs .btnCtn {  position: relative; z-index:9; top:0px; right: 0;  display:block;  height: 30px; }
+.rides-cs .btnCtn { height:18px;position:absolute;right:0;top:180px;line-height:18px; background:#676362;padding:0 5px;color:#fff;}
+.rides-cs .btnCtn2 {position:absolute;right:0;top:-30px;width:160px;height:30px;background-image:url(http://www.s36.com/Images/button.gif);}
+
+.jumbo{
+background-image: url(http://www.s36.com/Images/jackpotbg.png);
+background-size: 352px;
+background-repeat: no-repeat;
+display: -moz-inline-box;
+-moz-box-orient: vertical;
+display: inline-block;
+vertical-align: middle;
+*vertical-align: auto;
+-moz-border-radius: 0.1em;
+-webkit-border-radius: 0.1em;
+-o-border-radius: 0.1em;
+-ms-border-radius: 0.1em;
+-khtml-border-radius: 0.1em;
+font-weight: bolder;
+font-family: tahoma;
+font-size: 35px;
+margin: 0 5px;
+height: 25px;
+padding: 0 0.15em;
+color: #1E1E1E;
+padding: 1px 4px 18px 4px;
+letter-spacing: 10px;
+  }
