@@ -76,7 +76,7 @@
 .Promo_in_img2{float:left;width:630px; line-height:22px;}
 .Promo_in_img2 dt{width:25px;float:left;}
 .Promo_in_img2 dd{width:603px;float:left; }
-.Promo_in_img3{padding-left:30px;width:600px;float:left;}
+.Promo_in_img3{padding-left:27px;width:600px;float:left;}
 
 .promo_new .tit{background:url(http://www.s36.com/images/tit002.png) no-repeat;}
 .promo_new .row{padding-left:32px;font-size:12px;}
@@ -90,6 +90,9 @@
 .promo_new .row .btn-promo a{
 	text-decoration: none;
 	color: #000;
+}
+#plJoin{
+	width: 300px;
 }
 .forms-modal{
 
@@ -176,8 +179,17 @@ content: " ";
 .terms{padding-left:380px;height:70px;}
 .terms dl{float:left;}
 .tgc{width:400px; text-align:center;font-size:16px;color:#fff;font-weight:bold;height:30px;padding-top:15px;}
-.join_member{float:left;background:url(http://www.s36.com/images/btn2_promo.png) no-repeat; width:293px;height:24px;line-height:22px; text-align:center;margin-top:10px;}
-.join_member a{color:#404040; display:block;font-size:16px;font-weight:600;}
+.join_member {
+  float: left;
+  background: #ffb300!important;
+  width: 293px;
+  height: 27px;
+  line-height: 26px;
+  text-align: center;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+.join_member a{color:#000; display:block;font-size:16px;font-weight:600;text-shadow: 0px 1px #fff}
 .join_member a:hover{color:#000;}
 .oc a{color:#fff; text-decoration:underline;}
 .oc a:hover{color:#000;}
