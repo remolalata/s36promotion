@@ -90,6 +90,7 @@ Sys.WebForms.PageRequestManager._initialize('ToolkitScriptManager1', 'form1', ['
 
 <script src="assets/main.js" type="text/javascript"></script>
 <script type="text/javascript" src="assets/jquery.js"></script>
+
 <script src="assets/jLayouts.js" type="text/javascript" charset="UTF-8"></script>
 <script src="assets/tinybox.js" type="text/javascript"></script>
 
@@ -166,7 +167,61 @@ Sys.WebForms.PageRequestManager._initialize('ToolkitScriptManager1', 'form1', ['
     })(jQuery);
 
 </script>
+
 <style>
+/*----- Tabs -----*/
+.tabs {
+		width:100%;
+		display:inline-block;
+		margin-top: 20px;
+}
+
+		/*----- Tab Links -----*/
+
+
+		.tab-links{
+			text-align: center;
+			font-size: 0;
+		}
+		.tab-links li {
+			float: none;
+			list-style: none;
+			display: inline-block;
+		}
+
+				.tab-links a {
+					padding: 7px 49px;
+					display: inline-block;
+					font-size: 16px;
+					font-weight: 600;
+					color: #fff;
+					transition: all linear 0.15s;
+					border-bottom: 2px solid #ffb300;
+				}
+
+				.tab-links a:hover {
+					background: #ffb300;
+					text-decoration: none;
+				}
+
+		li.active a, li.active a:hover {
+			background: #ffb300;
+			color: #000;
+		}
+
+		/*----- Content of Tabs -----*/
+		.tab-content {
+margin-top: 18px;
+		}
+
+				.tab {
+						display:none;
+				}
+
+				.tab.active {
+						display:block;
+				}
+
 /* The Modal (background) */
 .img-responsive{
     display: block;
@@ -192,7 +247,8 @@ margin: 0 auto;
 	-webkit-animation-name: animatetop;
     -webkit-animation-duration: 0.4s;
     animation-name: animatetop;
-    animation-duration: 0.4s
+    animation-duration: 0.4s;
+
 }
 
 /* Add Animation */
@@ -211,8 +267,10 @@ margin: 0 auto;
     margin: auto;
     padding: 20px;
     border: 1px solid #333333;
-    width: 740px;
+    width: 700px;
 		border-radius: 10px;
+		background: url('assets/modal-bg.png');
+		min-height: 555px;
 }
 
 /* The Close Button */
@@ -228,6 +286,25 @@ margin: 0 auto;
     color: #000;
     text-decoration: none;
     cursor: pointer;
+}
+.cta-container{
+	background: #1d1d1d;
+	padding: 0 14px;
+	min-height: 185px;
+}
+.cta-container h3{
+	color: #ffb300;
+}
+.promo_new .row h3 {
+    font-size: 16px;
+    padding-top: 8px;
+}
+.cta{
+	position: absolute;
+	bottom: 1px;
+}
+.cta a{
+	display: inline-block;
 }
 </style>
 <div class="header">
@@ -606,203 +683,950 @@ document.getElementById("ddlLanguage2").options[document.getElementById("ddlLang
     <div class="main_body">
 
         <div class="main_content001 promo_new main_pd">
+					<div class="tabs">
+							<ul class="tab-links">
+									<li class="active"><a href="#tab1">所有优惠</a></li>
+									<li><a href="#tab2">娱乐场</a></li>
+									<li><a href="#tab3">电投娱乐</a></li>
+									<li><a href="#tab4">体育博彩</a></li>
+									<li><a href="#tab5">老虎机</a></li>
+									<li><a href="#tab6">特式优惠</a></li>
+							</ul>
 
+							<div class="tab-content">
+									<div id="tab1" class="tab active">
+										<div class="row">
+												<ul>
+														<li>
+															<div style="border:1px solid #383838;">
+																<a href="#"><img id="LiveGame01" src="assets/1.png" style="height:202px;width:303px;"></a>
+																<div class="cta-container">
+																<h3>娱乐场首存奖金 36% 高达 36,666 元</h3>
+																<p>
+																		<a href="#">
+																			凡成功注册的新会员首次存款（包括之前注册未存
+																			款的会员）至真人娱乐场并达到366 元或者以上，
+																			即可享有「36%首存奖金」高达 36,666 元。
 
-                <div class="promo_menu">
-                                <ul>
-                                    <li id="liAll" class="active">
-                                        <a id="lbAll" href="javascript:__doPostBack('lbAll','')">所有优惠</a></li>
-                                    <li id="liLiveGame">
-                                        <a id="lbLiveGame" href="javascript:__doPostBack('lbLiveGame','')">娱乐场</a></li>
-                                    <li id="liTeleGame">
-                                        <a id="lbTeleGame" href="javascript:__doPostBack('lbTeleGame','')">电投娱乐</a></li>
-                                    <li id="liSportsBook">
-                                        <a id="lbSportsBook" href="javascript:__doPostBack('lbSportsBook','')">体育博彩</a></li>
-                                    <li id="liEGame">
-                                        <a id="lbEGame" href="javascript:__doPostBack('lbEGame','')">老虎机</a></li>
+																		</a>
+																		<div class="cta" style="margin-top:15px;">
+																		<a href="#" id="btnModal" style="display:inline-block;color:#000;background:#ffb300;border-radius:4px;padding:2px 10px;font-weight:700;">马上办理<img src="assets/arrow.png"style="display:inline-block;vertical-align: -3px;/*! padding: 2px; */width: 15px;margin: 0 4px;" alt=""></a>
+																		<a href="#" style="display:inline-block;color:#FFB300;float:right;position: absolute;right: -178px;/* width: 100%; */bottom: 1px;">更多详情<img src="assets/info-btn.png" style="display:inline-block;vertical-align: -3px;/*! padding: 2px; */width: 15px;margin: 0 4px;"alt=""></a>
+																		</div>
+																</p>
+																</div>
+																</div>
+														</li>
+														<li>
+															<div style="border:1px solid #383838;">
+																<a href="#"><img id="LiveGame01" src="assets/2.png" style="height:202px;width:303px;"></a>
+																<div class="cta-container">
+																<h3>每月豪送十万元免费筹码 多玩多送</h3>
+																<p>
+																		<a href="#">
+																			每月在真人娱乐场的有效投注总额达一千万者，
+																			即可额外获得一万元免费筹码。每位会员每月最
+																			高可获港币十万元。
 
+																		</a>
+																		<div class="cta" style="margin-top:15px;">
+																		<a href="#" id="btnModal" style="display:inline-block;color:#000;background:#ffb300;border-radius:4px;padding:2px 10px;font-weight:700;">马上办理<img src="assets/arrow.png"style="display:inline-block;vertical-align: -3px;/*! padding: 2px; */width: 15px;margin: 0 4px;" alt=""></a>
+																		<a href="#" style="display:inline-block;color:#FFB300;float:right;position: absolute;right: -178px;/* width: 100%; */bottom: 1px;">更多详情<img src="assets/info-btn.png" style="display:inline-block;vertical-align: -3px;/*! padding: 2px; */width: 15px;margin: 0 4px;"alt=""></a>
+																		</div>
+																</p>
+																</div>
+																</div>
+														</li>
+														<li>
+															<div style="border:1px solid #383838;">
+																<a href="http://www.s36.com/Promotion13.aspx"><img id="LiveGame01" src="assets/3.png" style="height:202px;width:303px;"></a>
+																<div class="cta-container">
+																<h3>娱乐场每周 0.6% 返水 无上限 无限制</h3>
+																<p>
+																		<a href="http://www.s36.com/Promotion13.aspx">
+																			真人娱乐场每周0.6% 无上限返水回馈！投注越多
+																			，回报越多！活动从北京时间2012年01月16日
+																			12:00PM正式开始, 不设有限日期。
 
-                                    <li id="liVIP" class="line-none">
-                                        <a id="lbVIP" href="javascript:__doPostBack('lbVIP','')">特式优惠</a></li>
-                                </ul>
-                            </div>
-             <div id="UpdatePanel1">
+																		</a>
+																		<div class="cta" style="margin-top:15px;">
+																		<a href="#" id="btnModal" style="display:inline-block;color:#000;background:#ffb300;border-radius:4px;padding:2px 10px;font-weight:700;">马上办理<img src="assets/arrow.png"style="display:inline-block;vertical-align: -3px;/*! padding: 2px; */width: 15px;margin: 0 4px;" alt=""></a>
+																		<a href="#" style="display:inline-block;color:#FFB300;float:right;position: absolute;right: -178px;/* width: 100%; */bottom: 1px;">更多详情<img src="assets/info-btn.png" style="display:inline-block;vertical-align: -3px;/*! padding: 2px; */width: 15px;margin: 0 4px;"alt=""></a>
+																		</div>
+																</p>
+																</div>
+																</div>
+														</li>
+														<li>
+															<div style="border:1px solid #383838;">
+																<a href="http://www.s36.com/Promotion13.aspx"><img id="LiveGame01" src="assets/4.png" style="height:202px;width:303px;"></a>
+																<div class="cta-container">
+																<h3>連贏大禮連連送 加獎$8888</h3>
+																<p>
+																		<a href="http://www.s36.com/Promotion13.aspx">
+																			百家樂連贏獎不停！連贏越多，獎金越高。最高
+																			獎8,888元！ 活動從北京時間2012年01月16日
+																			12:00PM正式開始, 不設有限日期。
 
+																		</a>
+																		<div class="cta" style="margin-top:15px;">
+																		<a href="#" id="btnModal" style="display:inline-block;color:#000;background:#ffb300;border-radius:4px;padding:2px 10px;font-weight:700;">马上办理<img src="assets/arrow.png"style="display:inline-block;vertical-align: -3px;/*! padding: 2px; */width: 15px;margin: 0 4px;" alt=""></a>
+																		<a href="#" style="display:inline-block;color:#FFB300;float:right;position: absolute;right: -178px;/* width: 100%; */bottom: 1px;">更多详情<img src="assets/info-btn.png" style="display:inline-block;vertical-align: -3px;/*! padding: 2px; */width: 15px;margin: 0 4px;"alt=""></a>
+																		</div>
+																</p>
+																</div>
+																</div>
+														</li>
+														<li>
+														 <div style="border:1px solid #383838;">
+															 <a href="http://www.s36.com/Promotion13.aspx"><img id="LiveGame01" src="assets/5.png" style="height:202px;width:303px;"></a>
+															 <div class="cta-container">
+															 <h3>玩轉娛樂場 88元現金獎</h3>
+															 <p>
+																	 <a href="http://www.s36.com/Promotion13.aspx">
+																		 活動時間：由現在起至2017/09/01(五) 24:00前
+																		 有效. 活動對像：娛樂場內投注所有真人 館的真
+																		 人百家樂、真人免佣百家樂、均可參加此活動
 
+																	 </a>
+																	 <div class="cta" style="margin-top:15px;">
+																	 <a href="#" id="btnModal" style="display:inline-block;color:#000;background:#ffb300;border-radius:4px;padding:2px 10px;font-weight:700;">马上办理<img src="assets/arrow.png"style="display:inline-block;vertical-align: -3px;/*! padding: 2px; */width: 15px;margin: 0 4px;" alt=""></a>
+																	 <a href="#" style="display:inline-block;color:#FFB300;float:right;position: absolute;right: -178px;/* width: 100%; */bottom: 1px;">更多详情<img src="assets/info-btn.png" style="display:inline-block;vertical-align: -3px;/*! padding: 2px; */width: 15px;margin: 0 4px;"alt=""></a>
+																	 </div>
+															 </p>
+															 </div>
+															 </div>
+													 </li>
+													 <li>
+														<div style="border:1px solid #383838;">
+															<a href="http://www.s36.com/Promotion13.aspx"><img id="LiveGame01" src="assets/6.png" style="height:202px;width:303px;"></a>
+															<div class="cta-container">
+															<h3>娛樂場 - 發888 獎888</h3>
+															<p>
+																	<a href="http://www.s36.com/Promotion13.aspx">
+																		活動時間：由現在起至2017/07/01(五)24:00前
+																		有效.活動內容：活動期間，在娛樂場SA“沙龍館”
+																		所有百家樂遊戲桌台，同一牌局內所發牌中同時
+																		出現三張“8”
 
-</div>
-            <div class="row">
-                <ul>
-                     <div id="plLiveGame1">
+																	</a>
+																	<div class="cta" style="margin-top:15px;">
+																	<a href="#" id="btnModal" style="display:inline-block;color:#000;background:#ffb300;border-radius:4px;padding:2px 10px;font-weight:700;">马上办理<img src="assets/arrow.png"style="display:inline-block;vertical-align: -3px;/*! padding: 2px; */width: 15px;margin: 0 4px;" alt=""></a>
+																	<a href="#" style="display:inline-block;color:#FFB300;float:right;position: absolute;right: -178px;/* width: 100%; */bottom: 1px;">更多详情<img src="assets/info-btn.png" style="display:inline-block;vertical-align: -3px;/*! padding: 2px; */width: 15px;margin: 0 4px;"alt=""></a>
+																	</div>
+															</p>
+															</div>
+															</div>
+													</li>
+													<li>
+													 <div style="border:1px solid #383838;">
+														 <a href="http://www.s36.com/Promotion13.aspx"><img id="LiveGame01" src="assets/7.png" style="height:202px;width:303px;"></a>
+														 <div class="cta-container">
+														 <h3>电投百家乐 1.8%高额码佣</h3>
+														 <p>
+																 <a href="http://www.s36.com/Promotion13.aspx">
+																	 会员于电投百家乐进行投注，即可享1.8% 无上
+																	限高额码佣. 活动从北京时间2012年01月16日
+																	12:00PM正式开始, 不设有限日期。
 
-                         <li>
-                        <a href="http://www.s36.com/Promotion13.aspx"><img id="LiveGame01" src="assets/promo_livegame01_cn.png" alt="娱乐场首存奖金 36% 高达 36,666 元" style="height:210px;width:305px;"></a>
-                        <h3>娱乐场首存奖金 36% 高达 36,666 元</h3>
-                        <p>
-                            <a href="http://www.s36.com/Promotion13.aspx">
-                                凡成功注册的新会员首次存款（包括之前注册未存款的会员）至真人娱乐场并达到366 元或者以上，即可享有「36%首存奖金」高达 36,666 元。
+																 </a>
+																 <div class="cta" style="margin-top:15px;">
+																 <a href="#" id="btnModal" style="display:inline-block;color:#000;background:#ffb300;border-radius:4px;padding:2px 10px;font-weight:700;">马上办理<img src="assets/arrow.png"style="display:inline-block;vertical-align: -3px;/*! padding: 2px; */width: 15px;margin: 0 4px;" alt=""></a>
+																 <a href="#" style="display:inline-block;color:#FFB300;float:right;position: absolute;right: -178px;/* width: 100%; */bottom: 1px;">更多详情<img src="assets/info-btn.png" style="display:inline-block;vertical-align: -3px;/*! padding: 2px; */width: 15px;margin: 0 4px;"alt=""></a>
+																 </div>
+														 </p>
+														 </div>
+														 </div>
+												 </li>
+												 <li>
+													<div style="border:1px solid #383838;">
+														<a href="http://www.s36.com/Promotion13.aspx"><img id="LiveGame01" src="assets/8.png" style="height:202px;width:303px;"></a>
+														<div class="cta-container">
+														<h3>足球投注 0.4% 不封頂返水</h3>
+														<p>
+																<a href="http://www.s36.com/Promotion13.aspx">
+																	足球投注0.4%返水！返水優惠金額無上限！ 活
+																	動從北京時間2014年2月24日12：00PM開始，
+																	不設有限日期。
+
 																</a>
-                                <span class="btn1 btn-promo" id="btnModal"><a href="javascript:void(0)">马上办理</a></span> <span class="btn btn-promo"><a href="http://www.s36.com/Promotion13.aspx">更多详情</a></span>
+																<div class="cta" style="margin-top:15px;">
+																<a href="#" id="btnModal" style="display:inline-block;color:#000;background:#ffb300;border-radius:4px;padding:2px 10px;font-weight:700;">马上办理<img src="assets/arrow.png"style="display:inline-block;vertical-align: -3px;/*! padding: 2px; */width: 15px;margin: 0 4px;" alt=""></a>
+																<a href="#" style="display:inline-block;color:#FFB300;float:right;position: absolute;right: -178px;/* width: 100%; */bottom: 1px;">更多详情<img src="assets/info-btn.png" style="display:inline-block;vertical-align: -3px;/*! padding: 2px; */width: 15px;margin: 0 4px;"alt=""></a>
+																</div>
+														</p>
+														</div>
+														</div>
+												</li>
+												<li>
+												 <div style="border:1px solid #383838;">
+													 <a href="http://www.s36.com/Promotion13.aspx"><img id="LiveGame01" src="assets/9.png" style="height:202px;width:303px;"></a>
+													 <div class="cta-container">
+													 <h3>支持我們的合作夥伴感謝金20％</h3>
+													 <p>
+															 <a href="http://www.s36.com/Promotion13.aspx">
+																 2016-17 賽季 投注西甲瓦倫西亞賽事支持我們的
+																 合作夥伴 感謝金20％
+															 </a>
+															 <div class="cta" style="margin-top:15px;">
+															 <a href="#" id="btnModal" style="display:inline-block;color:#000;background:#ffb300;border-radius:4px;padding:2px 10px;font-weight:700;">马上办理<img src="assets/arrow.png"style="display:inline-block;vertical-align: -3px;/*! padding: 2px; */width: 15px;margin: 0 4px;" alt=""></a>
+															 <a href="#" style="display:inline-block;color:#FFB300;float:right;position: absolute;right: -178px;/* width: 100%; */bottom: 1px;">更多详情<img src="assets/info-btn.png" style="display:inline-block;vertical-align: -3px;/*! padding: 2px; */width: 15px;margin: 0 4px;"alt=""></a>
+															 </div>
+													 </p>
+													 </div>
+													 </div>
+											 </li>
+											 <li>
+												<div style="border:1px solid #383838;">
+													<a href="http://www.s36.com/Promotion13.aspx"><img id="LiveGame01" src="assets/10.png" style="height:202px;width:303px;"></a>
+													<div class="cta-container">
+													<h3>1%超高返水 不設上限</h3>
+													<p>
+															<a href="http://www.s36.com/Promotion13.aspx">
+															會員於指定的角子老虎中進行遊戲，即可享有1%
+															無上限返水優惠。活動從北京時間2012年01月
+															16日12:00PM正式開始, 不設有限日期。
 
-                        </p>
-                    </li>
+															</a>
+															<div class="cta" style="margin-top:15px;">
+															<a href="#" id="btnModal" style="display:inline-block;color:#000;background:#ffb300;border-radius:4px;padding:2px 10px;font-weight:700;">马上办理<img src="assets/arrow.png"style="display:inline-block;vertical-align: -3px;/*! padding: 2px; */width: 15px;margin: 0 4px;" alt=""></a>
+															<a href="#" style="display:inline-block;color:#FFB300;float:right;position: absolute;right: -178px;/* width: 100%; */bottom: 1px;">更多详情<img src="assets/info-btn.png" style="display:inline-block;vertical-align: -3px;/*! padding: 2px; */width: 15px;margin: 0 4px;"alt=""></a>
+															</div>
+													</p>
+													</div>
+													</div>
+											</li>
+											<li>
+											 <div style="border:1px solid #383838;">
+												 <a href="http://www.s36.com/Promotion13.aspx"><img id="LiveGame01" src="assets/11.png" style="height:202px;width:303px;"></a>
+												 <div class="cta-container">
+												 <h3>老虎機 額外返水 +50%</h3>
+												 <p>
+														 <a href="http://www.s36.com/Promotion13.aspx">
+															 活動時間：由現在起至2017/09/01(五)
+																24:00前有效。 活動規則：所有老虎機均可參加
+																此活動
 
-</div>
-                    <div id="plLiveGame2">
+														 </a>
+														 <div class="cta" style="margin-top:15px;">
+														 <a href="#" id="btnModal" style="display:inline-block;color:#000;background:#ffb300;border-radius:4px;padding:2px 10px;font-weight:700;">马上办理<img src="assets/arrow.png"style="display:inline-block;vertical-align: -3px;/*! padding: 2px; */width: 15px;margin: 0 4px;" alt=""></a>
+														 <a href="#" style="display:inline-block;color:#FFB300;float:right;position: absolute;right: -178px;/* width: 100%; */bottom: 1px;">更多详情<img src="assets/info-btn.png" style="display:inline-block;vertical-align: -3px;/*! padding: 2px; */width: 15px;margin: 0 4px;"alt=""></a>
+														 </div>
+												 </p>
+												 </div>
+												 </div>
+										 </li>
+										 <li>
+											<div style="border:1px solid #383838;">
+												<a href="http://www.s36.com/Promotion13.aspx"><img id="LiveGame01" src="assets/12.png" style="height:202px;width:303px;"></a>
+												<div class="cta-container">
+												<h3>8%老虎機 返還獎金</h3>
+												<p>
+														<a href="http://www.s36.com/Promotion13.aspx">
+															活動時間：由現在起至2017/09/01(五)24:00前
+															有效活動內容：活動期間，在SA“沙龍坊”所有
+															老虎機遊戲，負盈利達到要求，即可獲得返還獎
+															金。
 
-                        <li>
-                        <a href="http://www.s36.com/Promotion7.aspx"><img id="Image1" src="assets/promo_livegame02_cn.png" alt="100,000 每月豪送十万元免费筹码 多玩多送" style="height:210px;width:305px;"></a>
-                       <h3>100,000 每月豪送十万元免费筹码 多玩多送</h3>
-                        <p>
-                            <a href="http://www.s36.com/Promotion7.aspx">
-                                 每月在真人娱乐场的有效投注总额达一千万者，即可额外获得一万元免费筹码。每位会员每月最高可获港币十万元。
-                                <span class="btn">更多详情</span>
-                            </a>
-                        </p>
-                    </li>
+														</a>
+														<div class="cta" style="margin-top:15px;">
+														<a href="#" id="btnModal" style="display:inline-block;color:#000;background:#ffb300;border-radius:4px;padding:2px 10px;font-weight:700;">马上办理<img src="assets/arrow.png"style="display:inline-block;vertical-align: -3px;/*! padding: 2px; */width: 15px;margin: 0 4px;" alt=""></a>
+														<a href="#" style="display:inline-block;color:#FFB300;float:right;position: absolute;right: -178px;/* width: 100%; */bottom: 1px;">更多详情<img src="assets/info-btn.png" style="display:inline-block;vertical-align: -3px;/*! padding: 2px; */width: 15px;margin: 0 4px;"alt=""></a>
+														</div>
+												</p>
+												</div>
+												</div>
+										</li>
+										<li>
+										 <div style="border:1px solid #383838;">
+											 <a href="http://www.s36.com/Promotion13.aspx"><img id="LiveGame01" src="assets/13.png" style="height:202px;width:303px;"></a>
+											 <div class="cta-container">
+											 <h3>老虎機 得分王獎金 8,888元</h3>
+											 <p>
+													 <a href="http://www.s36.com/Promotion13.aspx">
+														 活動時間：由現在起至2017/09/01(五)24:00前
+														 有效。活動內容：活動期間，只需連續八天達到
+														 要求，即可獲得獎金。連續八天存款 連續八天均
+														 盈利 獎金
 
-</div>
-                    <div id="plLiveGame3">
+													 </a>
+													 <div class="cta" style="margin-top:15px;">
+													 <a href="#" id="btnModal" style="display:inline-block;color:#000;background:#ffb300;border-radius:4px;padding:2px 10px;font-weight:700;">马上办理<img src="assets/arrow.png"style="display:inline-block;vertical-align: -3px;/*! padding: 2px; */width: 15px;margin: 0 4px;" alt=""></a>
+													 <a href="#" style="display:inline-block;color:#FFB300;float:right;position: absolute;right: -178px;/* width: 100%; */bottom: 1px;">更多详情<img src="assets/info-btn.png" style="display:inline-block;vertical-align: -3px;/*! padding: 2px; */width: 15px;margin: 0 4px;"alt=""></a>
+													 </div>
+											 </p>
+											 </div>
+											 </div>
+									 </li>
+									 <li>
+										<div style="border:1px solid #383838;">
+											<a href="http://www.s36.com/Promotion13.aspx"><img id="LiveGame01" src="assets/14.png" style="height:202px;width:303px;"></a>
+											<div class="cta-container">
+											<h3>老虎機 五項流水挑戰 獎金888元</h3>
+											<p>
+													<a href="http://www.s36.com/Promotion13.aspx">
+														由現在起至2017/07/01(五)24:00前，達成老虎
+														機5項挑戰任務即可獲得獎金！活動期間內挑戰不
+														限次，挑戰越多獎金越多！趕快把握時間，
 
-                        <li>
-                       <a href="http://www.s36.com/Promotion5.aspx"><img id="Image2" src="assets/promo_livegame03_cn.png" alt="娱乐场每周 0.6% 返水 无上限 无限制" style="height:210px;width:305px;"></a>
-                        <h3>娱乐场每周 0.6% 返水 无上限 无限制</h3>
-                        <p>
-                            <a href="http://www.s36.com/Promotion5.aspx">
-                                真人娱乐场每周0.6% 无上限返水回馈！投注越多，回报越多！<br>
-    活动从北京时间2012年01月16日12:00PM正式开始, 不设有限日期。
-                                <span class="btn">更多详情</span>
-                            </a>
-                        </p>
-                    </li>
+													</a>
+													<div class="cta" style="margin-top:15px;">
+													<a href="#" id="btnModal" style="display:inline-block;color:#000;background:#ffb300;border-radius:4px;padding:2px 10px;font-weight:700;">马上办理<img src="assets/arrow.png"style="display:inline-block;vertical-align: -3px;/*! padding: 2px; */width: 15px;margin: 0 4px;" alt=""></a>
+													<a href="#" style="display:inline-block;color:#FFB300;float:right;position: absolute;right: -178px;/* width: 100%; */bottom: 1px;">更多详情<img src="assets/info-btn.png" style="display:inline-block;vertical-align: -3px;/*! padding: 2px; */width: 15px;margin: 0 4px;"alt=""></a>
+													</div>
+											</p>
+											</div>
+											</div>
+									</li>
+									<li>
+									 <div style="border:1px solid #383838;">
+										 <a href="http://www.s36.com/Promotion13.aspx"><img id="LiveGame01" src="assets/15.png" style="height:202px;width:303px;"></a>
+										 <div class="cta-container">
+										 <h3>老虎機 得分王獎金 8,888元</h3>
+										 <p>
+												 <a href="http://www.s36.com/Promotion13.aspx">
+													 活動時間：由現在起至2017/09/01(五)24:00前
+														有效。活動內容：活動期間，只需連續八天達到
+														要求，即可獲得獎金。連續八天存款 連續八天均
+														盈利 獎金
 
-</div>
-                    <div id="plLiveGame4">
+												 </a>
+												 <div class="cta" style="margin-top:15px;">
+												 <a href="#" id="btnModal" style="display:inline-block;color:#000;background:#ffb300;border-radius:4px;padding:2px 10px;font-weight:700;">马上办理<img src="assets/arrow.png"style="display:inline-block;vertical-align: -3px;/*! padding: 2px; */width: 15px;margin: 0 4px;" alt=""></a>
+												 <a href="#" style="display:inline-block;color:#FFB300;float:right;position: absolute;right: -178px;/* width: 100%; */bottom: 1px;">更多详情<img src="assets/info-btn.png" style="display:inline-block;vertical-align: -3px;/*! padding: 2px; */width: 15px;margin: 0 4px;"alt=""></a>
+												 </div>
+										 </p>
+										 </div>
+										 </div>
+								 </li>
+								 <li>
+									<div style="border:1px solid #383838;">
+										<a href="http://www.s36.com/Promotion13.aspx"><img id="LiveGame01" src="assets/16.png" style="height:202px;width:303px;"></a>
+										<div class="cta-container">
+										<h3>五項耐力挑戰二 獎金888元</h3>
+										<p>
+												<a href="http://www.s36.com/Promotion13.aspx">
+													由現在起至2017/07/01(五)24:00前，達成五項
+													老虎機耐力挑戰任務即可獲得獎金！活動期間內
+													挑戰不限次，挑戰越多獎金越多
 
-                        <li>
-                       <a href="http://www.s36.com/Promotion8.aspx"><img id="Image3" src="assets/promo_livegame04_cn.png" alt="连赢大礼连连送 加奖$8888" style="height:210px;width:305px;"></a>
-                        <h3>连赢大礼连连送 加奖$8888</h3>
-                        <p>
-                            <a href="http://www.s36.com/Promotion8.aspx">
-                                 百家乐连赢奖不停！连赢越多，奖金越高。最高奖8,888元！<br>
-    活动从北京时间2012年01月16日12:00PM正式开始, 不设有限日期。
+												</a>
+												<div class="cta" style="margin-top:15px;">
+												<a href="#" id="btnModal" style="display:inline-block;color:#000;background:#ffb300;border-radius:4px;padding:2px 10px;font-weight:700;">马上办理<img src="assets/arrow.png"style="display:inline-block;vertical-align: -3px;/*! padding: 2px; */width: 15px;margin: 0 4px;" alt=""></a>
+												<a href="#" style="display:inline-block;color:#FFB300;float:right;position: absolute;right: -178px;/* width: 100%; */bottom: 1px;">更多详情<img src="assets/info-btn.png" style="display:inline-block;vertical-align: -3px;/*! padding: 2px; */width: 15px;margin: 0 4px;"alt=""></a>
+												</div>
+										</p>
+										</div>
+										</div>
+								</li>
+								<li>
+								 <div style="border:1px solid #383838;">
+									 <a href="http://www.s36.com/Promotion13.aspx"><img id="LiveGame01" src="assets/17.png" style="height:202px;width:303px;"></a>
+									 <div class="cta-container">
+									 <h3>八發八中獎金 送8,888元</h3>
+									 <p>
+											 <a href="http://www.s36.com/Promotion13.aspx">
+												 活動時間：由現在起至2017/09/01(五)24:00前
+													有效活動內容：活動期間，只需連續八天達到要
+													求，即可獲得獎金。
 
-                                <span class="btn">更多详情</span>
-                            </a>
-                        </p>
-                    </li>
+											 </a>
+											 <div class="cta" style="margin-top:15px;">
+											 <a href="#" id="btnModal" style="display:inline-block;color:#000;background:#ffb300;border-radius:4px;padding:2px 10px;font-weight:700;">马上办理<img src="assets/arrow.png"style="display:inline-block;vertical-align: -3px;/*! padding: 2px; */width: 15px;margin: 0 4px;" alt=""></a>
+											 <a href="#" style="display:inline-block;color:#FFB300;float:right;position: absolute;right: -178px;/* width: 100%; */bottom: 1px;">更多详情<img src="assets/info-btn.png" style="display:inline-block;vertical-align: -3px;/*! padding: 2px; */width: 15px;margin: 0 4px;"alt=""></a>
+											 </div>
+									 </p>
+									 </div>
+									 </div>
+							 </li>
+							 <li>
+								<div style="border:1px solid #383838;">
+									<a href="http://www.s36.com/Promotion13.aspx"><img id="LiveGame01" src="assets/18.png" style="height:202px;width:303px;"></a>
+									<div class="cta-container">
+									<h3>1小時到賬 超時可獲“超時賠付金”</h3>
+									<p>
+											<a href="http://www.s36.com/Promotion13.aspx">
+												本活動從北京時間2013年03月18號正式開始，
+												不設有限日期。30萬或以內之提款申請，只要
+												出現1小時內還未成功到賬，用戶將可獲得相應
+												的"超時賠付金"。
 
-</div>
-                     <div id="plSportsBook1">
+											</a>
+											<div class="cta" style="margin-top:15px;">
+											<a href="#" id="btnModal" style="display:inline-block;color:#000;background:#ffb300;border-radius:4px;padding:2px 10px;font-weight:700;">马上办理<img src="assets/arrow.png"style="display:inline-block;vertical-align: -3px;/*! padding: 2px; */width: 15px;margin: 0 4px;" alt=""></a>
+											<a href="#" style="display:inline-block;color:#FFB300;float:right;position: absolute;right: -178px;/* width: 100%; */bottom: 1px;">更多详情<img src="assets/info-btn.png" style="display:inline-block;vertical-align: -3px;/*! padding: 2px; */width: 15px;margin: 0 4px;"alt=""></a>
+											</div>
+									</p>
+									</div>
+									</div>
+							</li>
+							<li>
+							 <div style="border:1px solid #383838;">
+								 <a href="http://www.s36.com/Promotion13.aspx"><img id="LiveGame01" src="assets/19.png" style="height:202px;width:303px;"></a>
+								 <div class="cta-container">
+								 <h3>現多獎勵+更多優惠</h3>
+								 <p>
+										 <a href="http://www.s36.com/Promotion13.aspx">
+											 晉升娛樂場升級玩家除可以得到現金獎勵外，
+											更可以享有每月額外返水!活動從北京時間2012
+											年01月16日12:00PM正式開始, 不設有限日期。
 
-                         <li>
-                       <a href="http://www.s36.com/Promotion11.aspx"><img id="Image4" src="assets/promo_sportsbook01_cn.png" alt="足球投注 0.4% 不封顶返水" style="height:210px;width:305px;"></a>
-                        <h3>足球投注 0.4% 不封顶返水</h3>
-                        <p>
-                            <a href="http://www.s36.com/Promotion11.aspx">
-                                足球投注0.4%返水！返水优惠金额无上限！<br>
-    活动从北京时间2014年2月24日12：00PM开始，不设有限日期。
+										 </a>
+										 <div class="cta" style="margin-top:15px;">
+										 <a href="#" id="btnModal" style="display:inline-block;color:#000;background:#ffb300;border-radius:4px;padding:2px 10px;font-weight:700;">马上办理<img src="assets/arrow.png"style="display:inline-block;vertical-align: -3px;/*! padding: 2px; */width: 15px;margin: 0 4px;" alt=""></a>
+										 <a href="#" style="display:inline-block;color:#FFB300;float:right;position: absolute;right: -178px;/* width: 100%; */bottom: 1px;">更多详情<img src="assets/info-btn.png" style="display:inline-block;vertical-align: -3px;/*! padding: 2px; */width: 15px;margin: 0 4px;"alt=""></a>
+										 </div>
+								 </p>
+								 </div>
+								 </div>
+						 </li>
+						 <li>
+							<div style="border:1px solid #383838;">
+								<a href="http://www.s36.com/Promotion13.aspx"><img id="LiveGame01" src="assets/20.png" style="height:202px;width:303px;"></a>
+								<div class="cta-container">
+								<h3>存款獎金 1% 無限次 無上限</h3>
+								<p>
+										<a href="http://www.s36.com/Promotion13.aspx">
+											存款到公司指定銀行帳戶即可享受1%匯款回贈。
+											不限次不限額，每次存每次送!活動從北京時間
+											2012年01月16日12:00PM正式開始, 不設有限
+											日期
 
-                                <span class="btn">更多详情</span>
-                            </a>
-                        </p>
-                    </li>
+										</a>
+										<div class="cta" style="margin-top:15px;">
+										<a href="#" id="btnModal" style="display:inline-block;color:#000;background:#ffb300;border-radius:4px;padding:2px 10px;font-weight:700;">马上办理<img src="assets/arrow.png"style="display:inline-block;vertical-align: -3px;/*! padding: 2px; */width: 15px;margin: 0 4px;" alt=""></a>
+										<a href="#" style="display:inline-block;color:#FFB300;float:right;position: absolute;right: -178px;/* width: 100%; */bottom: 1px;">更多详情<img src="assets/info-btn.png" style="display:inline-block;vertical-align: -3px;/*! padding: 2px; */width: 15px;margin: 0 4px;"alt=""></a>
+										</div>
+								</p>
+								</div>
+								</div>
+						</li>
+						<li>
+						 <div style="border:1px solid #383838;">
+							 <a href="http://www.s36.com/Promotion13.aspx"><img id="LiveGame01" src="assets/21.png" style="height:202px;width:303px;"></a>
+							 <div class="cta-container">
+							 <h3>全勤獎金3888元</h3>
+							 <p>
+									 <a href="http://www.s36.com/Promotion13.aspx">
+										 活動時間：由現在起至2017/09/01(五)24:00前
+										有效。活動規則：有效流水 月存款天 可獲彩金
+										流水倍數10萬~50 7天或以上 288元 2倍
 
-</div>
-                    <div id="plTeleGame">
+									 </a>
+									 <div class="cta" style="margin-top:15px;">
+									 <a href="#" id="btnModal" style="display:inline-block;color:#000;background:#ffb300;border-radius:4px;padding:2px 10px;font-weight:700;">马上办理<img src="assets/arrow.png"style="display:inline-block;vertical-align: -3px;/*! padding: 2px; */width: 15px;margin: 0 4px;" alt=""></a>
+									 <a href="#" style="display:inline-block;color:#FFB300;float:right;position: absolute;right: -178px;/* width: 100%; */bottom: 1px;">更多详情<img src="assets/info-btn.png" style="display:inline-block;vertical-align: -3px;/*! padding: 2px; */width: 15px;margin: 0 4px;"alt=""></a>
+									 </div>
+							 </p>
+							 </div>
+							 </div>
+					 </li>
+					 <li>
+						<div style="border:1px solid #383838;">
+							<a href="http://www.s36.com/Promotion13.aspx"><img id="LiveGame01" src="assets/22.png" style="height:202px;width:303px;"></a>
+							<div class="cta-container">
+							<h3>贏家分享 送微信紅包 888元</h3>
+							<p>
+									<a href="http://www.s36.com/Promotion13.aspx">
+										活動時間：由現在起至2017/09/01(五)24:00前
+										有效活動對像：任何遊戲內的任何項目，只要是由
+										單局單註所贏取的紀錄，均可參與此活動
 
-                         <li>
-                      <a href="http://www.s36.com/Promotion10.aspx"><img id="Image5" src="assets/promo_telegame01_cn.png" alt="电投百家乐 1.8%高额码佣" style="height:210px;width:305px;"></a>
-                        <h3>电投百家乐 1.8%高额码佣</h3>
-                        <p>
-                            <a href="http://www.s36.com/Promotion10.aspx">
-                                会员于电投百家乐进行投注，即可享1.8% 无上限高额码佣。<br>
-    活动从北京时间2012年01月16日12:00PM正式开始, 不设有限日期。
-                                <span class="btn">更多详情</span>
-                            </a>
-                        </p>
-                    </li>
+									</a>
+									<div class="cta" style="margin-top:15px;">
+									<a href="#" id="btnModal" style="display:inline-block;color:#000;background:#ffb300;border-radius:4px;padding:2px 10px;font-weight:700;">马上办理<img src="assets/arrow.png"style="display:inline-block;vertical-align: -3px;/*! padding: 2px; */width: 15px;margin: 0 4px;" alt=""></a>
+									<a href="#" style="display:inline-block;color:#FFB300;float:right;position: absolute;right: -178px;/* width: 100%; */bottom: 1px;">更多详情<img src="assets/info-btn.png" style="display:inline-block;vertical-align: -3px;/*! padding: 2px; */width: 15px;margin: 0 4px;"alt=""></a>
+									</div>
+							</p>
+							</div>
+							</div>
+					</li>
+												</ul>
+										</div>
+									</div>
 
-</div>
-                     <div id="plEGame">
+									<div id="tab2" class="tab">
+										<div class="row">
+												<ul>
+													<li>
+														<div style="border:1px solid #383838;">
+															<a href="#"><img id="LiveGame01" src="assets/1.png" style="height:202px;width:303px;"></a>
+															<div class="cta-container">
+															<h3>娱乐场首存奖金 36% 高达 36,666 元</h3>
+															<p>
+																	<a href="#">
+																		凡成功注册的新会员首次存款（包括之前注册未存
+																		款的会员）至真人娱乐场并达到366 元或者以上，
+																		即可享有「36%首存奖金」高达 36,666 元。
 
-                         <li>
-                       <a href="http://www.s36.com/Promotion6.aspx"><img id="Image6" src="assets/promo_egame01_cn.png" alt="1%超高返水 不设上限" style="height:210px;width:305px;"></a>
-                       <h3>1%超高返水 不设上限</h3>
-                        <p>
-                            <a href="http://www.s36.com/Promotion6.aspx">
-                                会员于指定的老虎机中进行游戏，即可享有1%无上限返水优惠。<br>
-    活动从北京时间2012年01月16日12:00PM正式开始, 不设有限日期。
-                                <span class="btn">更多详情</span>
-                            </a>
-                        </p>
-                    </li>
+																	</a>
+																	<div class="cta" style="margin-top:15px;">
+																	<a href="#" id="btnModal" style="display:inline-block;color:#000;background:#ffb300;border-radius:4px;padding:2px 10px;font-weight:700;">马上办理<img src="assets/arrow.png"style="display:inline-block;vertical-align: -3px;/*! padding: 2px; */width: 15px;margin: 0 4px;" alt=""></a>
+																	<a href="#" style="display:inline-block;color:#FFB300;float:right;position: absolute;right: -178px;/* width: 100%; */bottom: 1px;">更多详情<img src="assets/info-btn.png" style="display:inline-block;vertical-align: -3px;/*! padding: 2px; */width: 15px;margin: 0 4px;"alt=""></a>
+																	</div>
+															</p>
+															</div>
+															</div>
+													</li>
+													<li>
+														<div style="border:1px solid #383838;">
+															<a href="#"><img id="LiveGame01" src="assets/2.png" style="height:202px;width:303px;"></a>
+															<div class="cta-container">
+															<h3>每月豪送十万元免费筹码 多玩多送</h3>
+															<p>
+																	<a href="#">
+																		每月在真人娱乐场的有效投注总额达一千万者，
+																		即可额外获得一万元免费筹码。每位会员每月最
+																		高可获港币十万元。
 
-</div>
-                    <div id="plVIP1">
+																	</a>
+																	<div class="cta" style="margin-top:15px;">
+																	<a href="#" id="btnModal" style="display:inline-block;color:#000;background:#ffb300;border-radius:4px;padding:2px 10px;font-weight:700;">马上办理<img src="assets/arrow.png"style="display:inline-block;vertical-align: -3px;/*! padding: 2px; */width: 15px;margin: 0 4px;" alt=""></a>
+																	<a href="#" style="display:inline-block;color:#FFB300;float:right;position: absolute;right: -178px;/* width: 100%; */bottom: 1px;">更多详情<img src="assets/info-btn.png" style="display:inline-block;vertical-align: -3px;/*! padding: 2px; */width: 15px;margin: 0 4px;"alt=""></a>
+																	</div>
+															</p>
+															</div>
+															</div>
+													</li>
+													<li>
+														<div style="border:1px solid #383838;">
+															<a href="http://www.s36.com/Promotion13.aspx"><img id="LiveGame01" src="assets/3.png" style="height:202px;width:303px;"></a>
+															<div class="cta-container">
+															<h3>娱乐场每周 0.6% 返水 无上限 无限制</h3>
+															<p>
+																	<a href="http://www.s36.com/Promotion13.aspx">
+																		真人娱乐场每周0.6% 无上限返水回馈！投注越多
+																		，回报越多！活动从北京时间2012年01月16日
+																		12:00PM正式开始, 不设有限日期。
 
-                        <li>
-                       <a href="http://www.s36.com/PromotionWithdraw.aspx"><img id="Image7" src="assets/promo_vip01_cn.png" alt="1小时到账 超时可获“超时赔付金”" style="height:210px;width:305px;"></a>
-                        <h3>1小时到账 超时可获“超时赔付金”</h3>
-                        <p>
-                            <a href="http://www.s36.com/PromotionWithdraw.aspx">
-                                本活动从北京时间2013年03月18号正式开始，不设有限日期。<br>
-  30万或以内之提款申请，只要出现1小时内还未成功到账，用户将可获得相应的"超时赔付金"。
+																	</a>
+																	<div class="cta" style="margin-top:15px;">
+																	<a href="#" id="btnModal" style="display:inline-block;color:#000;background:#ffb300;border-radius:4px;padding:2px 10px;font-weight:700;">马上办理<img src="assets/arrow.png"style="display:inline-block;vertical-align: -3px;/*! padding: 2px; */width: 15px;margin: 0 4px;" alt=""></a>
+																	<a href="#" style="display:inline-block;color:#FFB300;float:right;position: absolute;right: -178px;/* width: 100%; */bottom: 1px;">更多详情<img src="assets/info-btn.png" style="display:inline-block;vertical-align: -3px;/*! padding: 2px; */width: 15px;margin: 0 4px;"alt=""></a>
+																	</div>
+															</p>
+															</div>
+															</div>
+													</li>
+													<li>
+														<div style="border:1px solid #383838;">
+															<a href="http://www.s36.com/Promotion13.aspx"><img id="LiveGame01" src="assets/4.png" style="height:202px;width:303px;"></a>
+															<div class="cta-container">
+															<h3>連贏大禮連連送 加獎$8888</h3>
+															<p>
+																	<a href="http://www.s36.com/Promotion13.aspx">
+																		百家樂連贏獎不停！連贏越多，獎金越高。最高
+																		獎8,888元！ 活動從北京時間2012年01月16日
+																		12:00PM正式開始, 不設有限日期。
 
-                                <span class="btn">更多详情</span>
-                            </a>
-                        </p>
-                    </li>
+																	</a>
+																	<div class="cta" style="margin-top:15px;">
+																	<a href="#" id="btnModal" style="display:inline-block;color:#000;background:#ffb300;border-radius:4px;padding:2px 10px;font-weight:700;">马上办理<img src="assets/arrow.png"style="display:inline-block;vertical-align: -3px;/*! padding: 2px; */width: 15px;margin: 0 4px;" alt=""></a>
+																	<a href="#" style="display:inline-block;color:#FFB300;float:right;position: absolute;right: -178px;/* width: 100%; */bottom: 1px;">更多详情<img src="assets/info-btn.png" style="display:inline-block;vertical-align: -3px;/*! padding: 2px; */width: 15px;margin: 0 4px;"alt=""></a>
+																	</div>
+															</p>
+															</div>
+															</div>
+													</li>
+													<li>
+													 <div style="border:1px solid #383838;">
+														 <a href="http://www.s36.com/Promotion13.aspx"><img id="LiveGame01" src="assets/5.png" style="height:202px;width:303px;"></a>
+														 <div class="cta-container">
+														 <h3>玩轉娛樂場 88元現金獎</h3>
+														 <p>
+																 <a href="http://www.s36.com/Promotion13.aspx">
+																	 活動時間：由現在起至2017/09/01(五) 24:00前
+																	 有效. 活動對像：娛樂場內投注所有真人 館的真
+																	 人百家樂、真人免佣百家樂、均可參加此活動
 
-</div>
-                    <div id="plVIP2">
+																 </a>
+																 <div class="cta" style="margin-top:15px;">
+																 <a href="#" id="btnModal" style="display:inline-block;color:#000;background:#ffb300;border-radius:4px;padding:2px 10px;font-weight:700;">马上办理<img src="assets/arrow.png"style="display:inline-block;vertical-align: -3px;/*! padding: 2px; */width: 15px;margin: 0 4px;" alt=""></a>
+																 <a href="#" style="display:inline-block;color:#FFB300;float:right;position: absolute;right: -178px;/* width: 100%; */bottom: 1px;">更多详情<img src="assets/info-btn.png" style="display:inline-block;vertical-align: -3px;/*! padding: 2px; */width: 15px;margin: 0 4px;"alt=""></a>
+																 </div>
+														 </p>
+														 </div>
+														 </div>
+												 </li>
+												 <li>
+													<div style="border:1px solid #383838;">
+														<a href="http://www.s36.com/Promotion13.aspx"><img id="LiveGame01" src="assets/6.png" style="height:202px;width:303px;"></a>
+														<div class="cta-container">
+														<h3>娛樂場 - 發888 獎888</h3>
+														<p>
+																<a href="http://www.s36.com/Promotion13.aspx">
+																	活動時間：由現在起至2017/07/01(五)24:00前
+																	有效.活動內容：活動期間，在娛樂場SA“沙龍館”
+																	所有百家樂遊戲桌台，同一牌局內所發牌中同時
+																	出現三張“8”
 
-                         <li>
-                       <a href="http://www.s36.com/Promotion1.aspx"><img id="Image8" src="assets/promo_vip02_cn.png" alt="现多奖励+更多优惠" style="height:210px;width:305px;"></a>
-                        <h3>现多奖励+更多优惠</h3>
-                        <p>
-                            <a href="http://www.s36.com/Promotion1.aspx">
-                                 晋升娱乐场升级玩家除可以得到现金奖励外，更可以享有每月额外返水!<br>
-活动从北京时间2012年01月16日12:00PM正式开始, 不设有限日期。
-                                <span class="btn">更多详情</span>
-                            </a>
-                        </p>
-                    </li>
+																</a>
+																<div class="cta" style="margin-top:15px;">
+																<a href="#" id="btnModal" style="display:inline-block;color:#000;background:#ffb300;border-radius:4px;padding:2px 10px;font-weight:700;">马上办理<img src="assets/arrow.png"style="display:inline-block;vertical-align: -3px;/*! padding: 2px; */width: 15px;margin: 0 4px;" alt=""></a>
+																<a href="#" style="display:inline-block;color:#FFB300;float:right;position: absolute;right: -178px;/* width: 100%; */bottom: 1px;">更多详情<img src="assets/info-btn.png" style="display:inline-block;vertical-align: -3px;/*! padding: 2px; */width: 15px;margin: 0 4px;"alt=""></a>
+																</div>
+														</p>
+														</div>
+														</div>
+												</li>
+												</ul>
+										</div>
+									</div>
 
-</div>
-                    <div id="plVIP3">
+									<div id="tab4" class="tab">
+										<div class="row">
+												<ul>
+													<li>
+													<div style="border:1px solid #383838;">
+														<a href="http://www.s36.com/Promotion13.aspx"><img id="LiveGame01" src="assets/8.png" style="height:202px;width:303px;"></a>
+														<div class="cta-container">
+														<h3>足球投注 0.4% 不封頂返水</h3>
+														<p>
+																<a href="http://www.s36.com/Promotion13.aspx">
+																	足球投注0.4%返水！返水優惠金額無上限！ 活
+																	動從北京時間2014年2月24日12：00PM開始，
+																	不設有限日期。
 
-                        <li>
-                       <a href="http://www.s36.com/Promotion3.aspx"><img id="Image9" src="assets/promo_vip03_cn.png" alt="存款奖金 1% 无限次 无上限" style="height:210px;width:305px;"></a>
-                        <h3>存款奖金 1% 无限次 无上限</h3>
-                        <p>
-                            <a href="http://www.s36.com/Promotion3.aspx">
-                                存款到公司指定银行帐户即可享受1%汇款回赠。不限次不限额，每次存每次送!<br>
-    活动从北京时间2012年01月16日12:00PM正式开始, 不设有限日期。
-                                <span class="btn">更多详情</span>
-                            </a>
-                        </p>
-                    </li>
+																</a>
+																<div class="cta" style="margin-top:15px;">
+																<a href="#" id="btnModal" style="display:inline-block;color:#000;background:#ffb300;border-radius:4px;padding:2px 10px;font-weight:700;">马上办理<img src="assets/arrow.png"style="display:inline-block;vertical-align: -3px;/*! padding: 2px; */width: 15px;margin: 0 4px;" alt=""></a>
+																<a href="#" style="display:inline-block;color:#FFB300;float:right;position: absolute;right: -178px;/* width: 100%; */bottom: 1px;">更多详情<img src="assets/info-btn.png" style="display:inline-block;vertical-align: -3px;/*! padding: 2px; */width: 15px;margin: 0 4px;"alt=""></a>
+																</div>
+														</p>
+														</div>
+														</div>
+												</li>
+												<li>
+												 <div style="border:1px solid #383838;">
+													 <a href="http://www.s36.com/Promotion13.aspx"><img id="LiveGame01" src="assets/9.png" style="height:202px;width:303px;"></a>
+													 <div class="cta-container">
+													 <h3>支持我們的合作夥伴感謝金20％</h3>
+													 <p>
+															 <a href="http://www.s36.com/Promotion13.aspx">
+																 2016-17 賽季 投注西甲瓦倫西亞賽事支持我們的
+																 合作夥伴 感謝金20％
+															 </a>
+															 <div class="cta" style="margin-top:15px;">
+															 <a href="#" id="btnModal" style="display:inline-block;color:#000;background:#ffb300;border-radius:4px;padding:2px 10px;font-weight:700;">马上办理<img src="assets/arrow.png"style="display:inline-block;vertical-align: -3px;/*! padding: 2px; */width: 15px;margin: 0 4px;" alt=""></a>
+															 <a href="#" style="display:inline-block;color:#FFB300;float:right;position: absolute;right: -178px;/* width: 100%; */bottom: 1px;">更多详情<img src="assets/info-btn.png" style="display:inline-block;vertical-align: -3px;/*! padding: 2px; */width: 15px;margin: 0 4px;"alt=""></a>
+															 </div>
+													 </p>
+													 </div>
+													 </div>
+											 </li>
+												</ul>
+										</div>
+									</div>
 
-</div>
-                    <div id="plSportsBook2">
+									<div id="tab5" class="tab">
+										<div class="row">
+												<ul>
+													<li>
+													<div style="border:1px solid #383838;">
+														<a href="http://www.s36.com/Promotion13.aspx"><img id="LiveGame01" src="assets/10.png" style="height:202px;width:303px;"></a>
+														<div class="cta-container">
+														<h3>1%超高返水 不設上限</h3>
+														<p>
+																<a href="http://www.s36.com/Promotion13.aspx">
+																會員於指定的角子老虎中進行遊戲，即可享有1%
+																無上限返水優惠。活動從北京時間2012年01月
+																16日12:00PM正式開始, 不設有限日期。
 
-                         <li>
-                       <a href="http://www.s36.com/PromotionSportsBook.aspx"><img id="Image10" src="assets/promo_sportsbook02_cn.png" alt="支持我们的合作伙伴感谢金20％" style="height:210px;width:305px;"></a>
-                        <h3>支持我们的合作伙伴感谢金20％</h3>
-                        <p>
-                            <a href="http://www.s36.com/PromotionSportsBook.aspx">
+																</a>
+																<div class="cta" style="margin-top:15px;">
+																<a href="#" id="btnModal" style="display:inline-block;color:#000;background:#ffb300;border-radius:4px;padding:2px 10px;font-weight:700;">马上办理<img src="assets/arrow.png"style="display:inline-block;vertical-align: -3px;/*! padding: 2px; */width: 15px;margin: 0 4px;" alt=""></a>
+																<a href="#" style="display:inline-block;color:#FFB300;float:right;position: absolute;right: -178px;/* width: 100%; */bottom: 1px;">更多详情<img src="assets/info-btn.png" style="display:inline-block;vertical-align: -3px;/*! padding: 2px; */width: 15px;margin: 0 4px;"alt=""></a>
+																</div>
+														</p>
+														</div>
+														</div>
+												</li>
+												<li>
+												 <div style="border:1px solid #383838;">
+													 <a href="http://www.s36.com/Promotion13.aspx"><img id="LiveGame01" src="assets/11.png" style="height:202px;width:303px;"></a>
+													 <div class="cta-container">
+													 <h3>老虎機 額外返水 +50%</h3>
+													 <p>
+															 <a href="http://www.s36.com/Promotion13.aspx">
+																 活動時間：由現在起至2017/09/01(五)
+																	24:00前有效。 活動規則：所有老虎機均可參加
+																	此活動
 
-     2016-17 赛季 投注西甲瓦倫西亚賽事<br>支持我们的合作伙伴<br>感谢金20％
+															 </a>
+															 <div class="cta" style="margin-top:15px;">
+															 <a href="#" id="btnModal" style="display:inline-block;color:#000;background:#ffb300;border-radius:4px;padding:2px 10px;font-weight:700;">马上办理<img src="assets/arrow.png"style="display:inline-block;vertical-align: -3px;/*! padding: 2px; */width: 15px;margin: 0 4px;" alt=""></a>
+															 <a href="#" style="display:inline-block;color:#FFB300;float:right;position: absolute;right: -178px;/* width: 100%; */bottom: 1px;">更多详情<img src="assets/info-btn.png" style="display:inline-block;vertical-align: -3px;/*! padding: 2px; */width: 15px;margin: 0 4px;"alt=""></a>
+															 </div>
+													 </p>
+													 </div>
+													 </div>
+											 </li>
+											 <li>
+												<div style="border:1px solid #383838;">
+													<a href="http://www.s36.com/Promotion13.aspx"><img id="LiveGame01" src="assets/12.png" style="height:202px;width:303px;"></a>
+													<div class="cta-container">
+													<h3>8%老虎機 返還獎金</h3>
+													<p>
+															<a href="http://www.s36.com/Promotion13.aspx">
+																活動時間：由現在起至2017/09/01(五)24:00前
+																有效活動內容：活動期間，在SA“沙龍坊”所有
+																老虎機遊戲，負盈利達到要求，即可獲得返還獎
+																金。
 
-                                <span class="btn">更多详情</span>
-                            </a>
-                        </p>
-                    </li>
+															</a>
+															<div class="cta" style="margin-top:15px;">
+															<a href="#" id="btnModal" style="display:inline-block;color:#000;background:#ffb300;border-radius:4px;padding:2px 10px;font-weight:700;">马上办理<img src="assets/arrow.png"style="display:inline-block;vertical-align: -3px;/*! padding: 2px; */width: 15px;margin: 0 4px;" alt=""></a>
+															<a href="#" style="display:inline-block;color:#FFB300;float:right;position: absolute;right: -178px;/* width: 100%; */bottom: 1px;">更多详情<img src="assets/info-btn.png" style="display:inline-block;vertical-align: -3px;/*! padding: 2px; */width: 15px;margin: 0 4px;"alt=""></a>
+															</div>
+													</p>
+													</div>
+													</div>
+											</li>
+											<li>
+											 <div style="border:1px solid #383838;">
+												 <a href="http://www.s36.com/Promotion13.aspx"><img id="LiveGame01" src="assets/13.png" style="height:202px;width:303px;"></a>
+												 <div class="cta-container">
+												 <h3>老虎機 得分王獎金 8,888元</h3>
+												 <p>
+														 <a href="http://www.s36.com/Promotion13.aspx">
+															 活動時間：由現在起至2017/09/01(五)24:00前
+															 有效。活動內容：活動期間，只需連續八天達到
+															 要求，即可獲得獎金。連續八天存款 連續八天均
+															 盈利 獎金
 
-</div>
-                </ul>
-            </div>
+														 </a>
+														 <div class="cta" style="margin-top:15px;">
+														 <a href="#" id="btnModal" style="display:inline-block;color:#000;background:#ffb300;border-radius:4px;padding:2px 10px;font-weight:700;">马上办理<img src="assets/arrow.png"style="display:inline-block;vertical-align: -3px;/*! padding: 2px; */width: 15px;margin: 0 4px;" alt=""></a>
+														 <a href="#" style="display:inline-block;color:#FFB300;float:right;position: absolute;right: -178px;/* width: 100%; */bottom: 1px;">更多详情<img src="assets/info-btn.png" style="display:inline-block;vertical-align: -3px;/*! padding: 2px; */width: 15px;margin: 0 4px;"alt=""></a>
+														 </div>
+												 </p>
+												 </div>
+												 </div>
+										 </li>
+										 <li>
+											<div style="border:1px solid #383838;">
+												<a href="http://www.s36.com/Promotion13.aspx"><img id="LiveGame01" src="assets/14.png" style="height:202px;width:303px;"></a>
+												<div class="cta-container">
+												<h3>老虎機 五項流水挑戰 獎金888元</h3>
+												<p>
+														<a href="http://www.s36.com/Promotion13.aspx">
+															由現在起至2017/07/01(五)24:00前，達成老虎
+															機5項挑戰任務即可獲得獎金！活動期間內挑戰不
+															限次，挑戰越多獎金越多！趕快把握時間，
+
+														</a>
+														<div class="cta" style="margin-top:15px;">
+														<a href="#" id="btnModal" style="display:inline-block;color:#000;background:#ffb300;border-radius:4px;padding:2px 10px;font-weight:700;">马上办理<img src="assets/arrow.png"style="display:inline-block;vertical-align: -3px;/*! padding: 2px; */width: 15px;margin: 0 4px;" alt=""></a>
+														<a href="#" style="display:inline-block;color:#FFB300;float:right;position: absolute;right: -178px;/* width: 100%; */bottom: 1px;">更多详情<img src="assets/info-btn.png" style="display:inline-block;vertical-align: -3px;/*! padding: 2px; */width: 15px;margin: 0 4px;"alt=""></a>
+														</div>
+												</p>
+												</div>
+												</div>
+										</li>
+										<li>
+										 <div style="border:1px solid #383838;">
+											 <a href="http://www.s36.com/Promotion13.aspx"><img id="LiveGame01" src="assets/15.png" style="height:202px;width:303px;"></a>
+											 <div class="cta-container">
+											 <h3>老虎機 得分王獎金 8,888元</h3>
+											 <p>
+													 <a href="http://www.s36.com/Promotion13.aspx">
+														 活動時間：由現在起至2017/09/01(五)24:00前
+															有效。活動內容：活動期間，只需連續八天達到
+															要求，即可獲得獎金。連續八天存款 連續八天均
+															盈利 獎金
+
+													 </a>
+													 <div class="cta" style="margin-top:15px;">
+													 <a href="#" id="btnModal" style="display:inline-block;color:#000;background:#ffb300;border-radius:4px;padding:2px 10px;font-weight:700;">马上办理<img src="assets/arrow.png"style="display:inline-block;vertical-align: -3px;/*! padding: 2px; */width: 15px;margin: 0 4px;" alt=""></a>
+													 <a href="#" style="display:inline-block;color:#FFB300;float:right;position: absolute;right: -178px;/* width: 100%; */bottom: 1px;">更多详情<img src="assets/info-btn.png" style="display:inline-block;vertical-align: -3px;/*! padding: 2px; */width: 15px;margin: 0 4px;"alt=""></a>
+													 </div>
+											 </p>
+											 </div>
+											 </div>
+									 </li>
+									 <li>
+										<div style="border:1px solid #383838;">
+											<a href="http://www.s36.com/Promotion13.aspx"><img id="LiveGame01" src="assets/16.png" style="height:202px;width:303px;"></a>
+											<div class="cta-container">
+											<h3>五項耐力挑戰二 獎金888元</h3>
+											<p>
+													<a href="http://www.s36.com/Promotion13.aspx">
+														由現在起至2017/07/01(五)24:00前，達成五項
+														老虎機耐力挑戰任務即可獲得獎金！活動期間內
+														挑戰不限次，挑戰越多獎金越多
+
+													</a>
+													<div class="cta" style="margin-top:15px;">
+													<a href="#" id="btnModal" style="display:inline-block;color:#000;background:#ffb300;border-radius:4px;padding:2px 10px;font-weight:700;">马上办理<img src="assets/arrow.png"style="display:inline-block;vertical-align: -3px;/*! padding: 2px; */width: 15px;margin: 0 4px;" alt=""></a>
+													<a href="#" style="display:inline-block;color:#FFB300;float:right;position: absolute;right: -178px;/* width: 100%; */bottom: 1px;">更多详情<img src="assets/info-btn.png" style="display:inline-block;vertical-align: -3px;/*! padding: 2px; */width: 15px;margin: 0 4px;"alt=""></a>
+													</div>
+											</p>
+											</div>
+											</div>
+									</li>
+									<li>
+									 <div style="border:1px solid #383838;">
+										 <a href="http://www.s36.com/Promotion13.aspx"><img id="LiveGame01" src="assets/17.png" style="height:202px;width:303px;"></a>
+										 <div class="cta-container">
+										 <h3>八發八中獎金 送8,888元</h3>
+										 <p>
+												 <a href="http://www.s36.com/Promotion13.aspx">
+													 活動時間：由現在起至2017/09/01(五)24:00前
+														有效活動內容：活動期間，只需連續八天達到要
+														求，即可獲得獎金。
+
+												 </a>
+												 <div class="cta" style="margin-top:15px;">
+												 <a href="#" id="btnModal" style="display:inline-block;color:#000;background:#ffb300;border-radius:4px;padding:2px 10px;font-weight:700;">马上办理<img src="assets/arrow.png"style="display:inline-block;vertical-align: -3px;/*! padding: 2px; */width: 15px;margin: 0 4px;" alt=""></a>
+												 <a href="#" style="display:inline-block;color:#FFB300;float:right;position: absolute;right: -178px;/* width: 100%; */bottom: 1px;">更多详情<img src="assets/info-btn.png" style="display:inline-block;vertical-align: -3px;/*! padding: 2px; */width: 15px;margin: 0 4px;"alt=""></a>
+												 </div>
+										 </p>
+										 </div>
+										 </div>
+								 </li>
+												</ul>
+										</div>
+							</div>
+							<div id="tab3" class="tab">
+								<div class="row">
+										<ul>
+											<li>
+											 <div style="border:1px solid #383838;">
+												 <a href="http://www.s36.com/Promotion13.aspx"><img id="LiveGame01" src="assets/7.png" style="height:202px;width:303px;"></a>
+												 <div class="cta-container">
+												 <h3>电投百家乐 1.8%高额码佣</h3>
+												 <p>
+														 <a href="http://www.s36.com/Promotion13.aspx">
+															 会员于电投百家乐进行投注，即可享1.8% 无上
+															限高额码佣. 活动从北京时间2012年01月16日
+															12:00PM正式开始, 不设有限日期。
+
+														 </a>
+														 <div class="cta" style="margin-top:15px;">
+														 <a href="#" id="btnModal" style="display:inline-block;color:#000;background:#ffb300;border-radius:4px;padding:2px 10px;font-weight:700;">马上办理<img src="assets/arrow.png"style="display:inline-block;vertical-align: -3px;/*! padding: 2px; */width: 15px;margin: 0 4px;" alt=""></a>
+														 <a href="#" style="display:inline-block;color:#FFB300;float:right;position: absolute;right: -178px;/* width: 100%; */bottom: 1px;">更多详情<img src="assets/info-btn.png" style="display:inline-block;vertical-align: -3px;/*! padding: 2px; */width: 15px;margin: 0 4px;"alt=""></a>
+														 </div>
+												 </p>
+												 </div>
+												 </div>
+										 </li>
+										</ul>
+								</div>
+							</div>
+							<div id="tab6" class="tab">
+								<div class="row">
+										<ul>
+											<li>
+											 <div style="border:1px solid #383838;">
+												 <a href="http://www.s36.com/Promotion13.aspx"><img id="LiveGame01" src="assets/18.png" style="height:202px;width:303px;"></a>
+												 <div class="cta-container">
+												 <h3>1小時到賬 超時可獲“超時賠付金”</h3>
+												 <p>
+														 <a href="http://www.s36.com/Promotion13.aspx">
+															 本活動從北京時間2013年03月18號正式開始，
+															 不設有限日期。30萬或以內之提款申請，只要
+															 出現1小時內還未成功到賬，用戶將可獲得相應
+															 的"超時賠付金"。
+
+														 </a>
+														 <div class="cta" style="margin-top:15px;">
+														 <a href="#" id="btnModal" style="display:inline-block;color:#000;background:#ffb300;border-radius:4px;padding:2px 10px;font-weight:700;">马上办理<img src="assets/arrow.png"style="display:inline-block;vertical-align: -3px;/*! padding: 2px; */width: 15px;margin: 0 4px;" alt=""></a>
+														 <a href="#" style="display:inline-block;color:#FFB300;float:right;position: absolute;right: -178px;/* width: 100%; */bottom: 1px;">更多详情<img src="assets/info-btn.png" style="display:inline-block;vertical-align: -3px;/*! padding: 2px; */width: 15px;margin: 0 4px;"alt=""></a>
+														 </div>
+												 </p>
+												 </div>
+												 </div>
+										 </li>
+										 <li>
+											<div style="border:1px solid #383838;">
+												<a href="http://www.s36.com/Promotion13.aspx"><img id="LiveGame01" src="assets/19.png" style="height:202px;width:303px;"></a>
+												<div class="cta-container">
+												<h3>現多獎勵+更多優惠</h3>
+												<p>
+														<a href="http://www.s36.com/Promotion13.aspx">
+															晉升娛樂場升級玩家除可以得到現金獎勵外，
+														 更可以享有每月額外返水!活動從北京時間2012
+														 年01月16日12:00PM正式開始, 不設有限日期。
+
+														</a>
+														<div class="cta" style="margin-top:15px;">
+														<a href="#" id="btnModal" style="display:inline-block;color:#000;background:#ffb300;border-radius:4px;padding:2px 10px;font-weight:700;">马上办理<img src="assets/arrow.png"style="display:inline-block;vertical-align: -3px;/*! padding: 2px; */width: 15px;margin: 0 4px;" alt=""></a>
+														<a href="#" style="display:inline-block;color:#FFB300;float:right;position: absolute;right: -178px;/* width: 100%; */bottom: 1px;">更多详情<img src="assets/info-btn.png" style="display:inline-block;vertical-align: -3px;/*! padding: 2px; */width: 15px;margin: 0 4px;"alt=""></a>
+														</div>
+												</p>
+												</div>
+												</div>
+										</li>
+										<li>
+										 <div style="border:1px solid #383838;">
+											 <a href="http://www.s36.com/Promotion13.aspx"><img id="LiveGame01" src="assets/20.png" style="height:202px;width:303px;"></a>
+											 <div class="cta-container">
+											 <h3>存款獎金 1% 無限次 無上限</h3>
+											 <p>
+													 <a href="http://www.s36.com/Promotion13.aspx">
+														 存款到公司指定銀行帳戶即可享受1%匯款回贈。
+														 不限次不限額，每次存每次送!活動從北京時間
+														 2012年01月16日12:00PM正式開始, 不設有限
+														 日期
+
+													 </a>
+													 <div class="cta" style="margin-top:15px;">
+													 <a href="#" id="btnModal" style="display:inline-block;color:#000;background:#ffb300;border-radius:4px;padding:2px 10px;font-weight:700;">马上办理<img src="assets/arrow.png"style="display:inline-block;vertical-align: -3px;/*! padding: 2px; */width: 15px;margin: 0 4px;" alt=""></a>
+													 <a href="#" style="display:inline-block;color:#FFB300;float:right;position: absolute;right: -178px;/* width: 100%; */bottom: 1px;">更多详情<img src="assets/info-btn.png" style="display:inline-block;vertical-align: -3px;/*! padding: 2px; */width: 15px;margin: 0 4px;"alt=""></a>
+													 </div>
+											 </p>
+											 </div>
+											 </div>
+									 </li>
+									 <li>
+										<div style="border:1px solid #383838;">
+											<a href="http://www.s36.com/Promotion13.aspx"><img id="LiveGame01" src="assets/21.png" style="height:202px;width:303px;"></a>
+											<div class="cta-container">
+											<h3>全勤獎金3888元</h3>
+											<p>
+													<a href="http://www.s36.com/Promotion13.aspx">
+														活動時間：由現在起至2017/09/01(五)24:00前
+													 有效。活動規則：有效流水 月存款天 可獲彩金
+													 流水倍數10萬~50 7天或以上 288元 2倍
+
+													</a>
+													<div class="cta" style="margin-top:15px;">
+													<a href="#" id="btnModal" style="display:inline-block;color:#000;background:#ffb300;border-radius:4px;padding:2px 10px;font-weight:700;">马上办理<img src="assets/arrow.png"style="display:inline-block;vertical-align: -3px;/*! padding: 2px; */width: 15px;margin: 0 4px;" alt=""></a>
+													<a href="#" style="display:inline-block;color:#FFB300;float:right;position: absolute;right: -178px;/* width: 100%; */bottom: 1px;">更多详情<img src="assets/info-btn.png" style="display:inline-block;vertical-align: -3px;/*! padding: 2px; */width: 15px;margin: 0 4px;"alt=""></a>
+													</div>
+											</p>
+											</div>
+											</div>
+									</li>
+									<li>
+									 <div style="border:1px solid #383838;">
+										 <a href="http://www.s36.com/Promotion13.aspx"><img id="LiveGame01" src="assets/22.png" style="height:202px;width:303px;"></a>
+										 <div class="cta-container">
+										 <h3>贏家分享 送微信紅包 888元</h3>
+										 <p>
+												 <a href="http://www.s36.com/Promotion13.aspx">
+													 活動時間：由現在起至2017/09/01(五)24:00前
+													 有效活動對像：任何遊戲內的任何項目，只要是由
+													 單局單註所贏取的紀錄，均可參與此活動
+
+												 </a>
+												 <div class="cta" style="margin-top:15px;">
+												 <a href="#" id="btnModal" style="display:inline-block;color:#000;background:#ffb300;border-radius:4px;padding:2px 10px;font-weight:700;">马上办理<img src="assets/arrow.png"style="display:inline-block;vertical-align: -3px;/*! padding: 2px; */width: 15px;margin: 0 4px;" alt=""></a>
+												 <a href="#" style="display:inline-block;color:#FFB300;float:right;position: absolute;right: -178px;/* width: 100%; */bottom: 1px;">更多详情<img src="assets/info-btn.png" style="display:inline-block;vertical-align: -3px;/*! padding: 2px; */width: 15px;margin: 0 4px;"alt=""></a>
+												 </div>
+										 </p>
+										 </div>
+										 </div>
+								 </li>
+										</ul>
+								</div>
+							</div>
+					</div>
+
+
+
+
+
                 <div class="clear">
                 </div>
             <div style="width: 950px; margin: 0 auto; height: 80px;">
@@ -1058,22 +1882,21 @@ document.getElementById("ddlLanguage2").options[document.getElementById("ddlLang
         <div class="line"></div>
         <div style="font-size:10px;padding:10px 0;">
             《沙龙会》属于《沙龙国际》集团官方直营，《沙龙国际》居于亚洲领先地位，一直聚焦亚洲市场。沙龙会/沙龙国际第一品牌 --
-《沙龙会》成立于2009年，拥有菲律宾合法运营执照，由菲律宾共和国政府授权非常公平公正。《沙龙会现金网》官方网址：www.S36.com ＆
-www.S36.net、还有www.saloncs.com、www.clubs88.com 及
-www.saloncs88.com，立即咨询《沙龙会》客服中心有更多稳定的《沙龙会》官方备用网址。《沙龙会》主要网上娱乐型产品有真人游戏共
-有：SA平台、AG平台、ALLBET平台、BBin平台、HG平台、OPUS平台、GP平台、GD平台等亚洲知名完美顺畅的真人平台，带来不一样的线上
-真人娱乐体验、电子类游戏共有：SA Gaming平台、1S平台、Qtech平台、Betsoft
-Gaming平台、PlaynGO平台、BBin平台、Opus
-Gaming平台等优质国际水准平台，瞬间即可享受丰富的精选游戏、《沙龙会体育》以体育赛事设定精彩选项，涵盖欧洲冠军联赛(简称欧冠)、英格兰超级足
- 球联赛(简称英超)、西班牙甲级足球联赛(简称西甲)、义大利甲组足球联赛(简称意甲)、德国甲级足球联赛(简称德甲)、美国职业篮球联赛(简称
-NBA)，用的是稳定性更强的利记平台和IM平台这两个专业权威平台。《沙龙会》为了持续提升品牌形象，在2016年沙龙会与瓦伦西亚俱乐部签订了合作关
-系，《沙龙会》正式成为瓦伦西亚俱乐部亚洲地区官方合作伙伴。《沙龙会》全球品牌形象代言人为“麦迪
-T-MAC”(前NBA巨星级偶像球员)。《沙龙会》为广大玩家提供海量优惠如下：沙龙会真人游戏优惠、沙龙会电子游戏优惠、沙龙会体育优惠。《沙龙会手
-机版/移动版》随时随地随处玩乐。《沙龙会》在亚洲拥有超过20万忠实玩家并提供多种语言供玩家选择。沙龙会游戏众多、服务优良、存取快速、优惠丰厚、信
- 誉一流、实力显赫，要玩就玩沙龙会！一分钟开户，百份百精彩！另外《沙龙会》以体育赛事为主题的体育网站《沙龙会体育》。《沙龙会体育
--www.saloncs.info》内容囊括最新体育新闻、最快足球比分及篮球比分、最全体育赛事直播、最精彩体育视频、最好玩有奖体育竞猜，一应俱全
-体育爱好者广受欢迎。 &nbsp;&nbsp;
-
+						《沙龙会》成立于2009年，拥有菲律宾合法运营执照，由菲律宾共和国政府授权非常公平公正。《沙龙会现金网》官方网址：www.S36.com ＆
+						www.S36.net、还有www.saloncs.com、www.clubs88.com 及
+						www.saloncs88.com，立即咨询《沙龙会》客服中心有更多稳定的《沙龙会》官方备用网址。《沙龙会》主要网上娱乐型产品有真人游戏共
+						有：SA平台、AG平台、ALLBET平台、BBin平台、HG平台、OPUS平台、GP平台、GD平台等亚洲知名完美顺畅的真人平台，带来不一样的线上
+						真人娱乐体验、电子类游戏共有：SA Gaming平台、1S平台、Qtech平台、Betsoft
+						Gaming平台、PlaynGO平台、BBin平台、Opus
+						Gaming平台等优质国际水准平台，瞬间即可享受丰富的精选游戏、《沙龙会体育》以体育赛事设定精彩选项，涵盖欧洲冠军联赛(简称欧冠)、英格兰超级足
+						 球联赛(简称英超)、西班牙甲级足球联赛(简称西甲)、义大利甲组足球联赛(简称意甲)、德国甲级足球联赛(简称德甲)、美国职业篮球联赛(简称
+						NBA)，用的是稳定性更强的利记平台和IM平台这两个专业权威平台。《沙龙会》为了持续提升品牌形象，在2016年沙龙会与瓦伦西亚俱乐部签订了合作关
+						系，《沙龙会》正式成为瓦伦西亚俱乐部亚洲地区官方合作伙伴。《沙龙会》全球品牌形象代言人为“麦迪
+						T-MAC”(前NBA巨星级偶像球员)。《沙龙会》为广大玩家提供海量优惠如下：沙龙会真人游戏优惠、沙龙会电子游戏优惠、沙龙会体育优惠。《沙龙会手
+						机版/移动版》随时随地随处玩乐。《沙龙会》在亚洲拥有超过20万忠实玩家并提供多种语言供玩家选择。沙龙会游戏众多、服务优良、存取快速、优惠丰厚、信
+						 誉一流、实力显赫，要玩就玩沙龙会！一分钟开户，百份百精彩！另外《沙龙会》以体育赛事为主题的体育网站《沙龙会体育》。《沙龙会体育
+						-www.saloncs.info》内容囊括最新体育新闻、最快足球比分及篮球比分、最全体育赛事直播、最精彩体育视频、最好玩有奖体育竞猜，一应俱全
+						体育爱好者广受欢迎。 &nbsp;&nbsp;
         </div>
         <div class="icon">
             <a href="http://www.northcagayan.com/" target="_blank" style="width:54px"></a>
@@ -1103,6 +1926,23 @@ T-MAC”(前NBA巨星级偶像球员)。《沙龙会》为广大玩家提供海�
     </div>
 
 </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+<script type="text/javascript">
+jQuery(document).ready(function() {
+	jQuery('.tabs .tab-links a').on('click', function(e)  {
+			var currentAttrValue = jQuery(this).attr('href');
+
+			// Show/Hide Tabs
+			jQuery('.tabs ' + currentAttrValue).show().siblings().hide();
+
+			// Change/remove current tab to active
+			jQuery(this).parent('li').addClass('active').siblings().removeClass('active');
+
+			e.preventDefault();
+	});
+});
+</script>
 <script language="javascript" type="text/javascript">
     function clearCache() {
         var nt = window.open("http://www.s36.com/ClearCache.aspx", "clearCache",
@@ -1155,8 +1995,7 @@ scrollbars=yes, resizable=no, location=no, status=no,top=100,left=300");
 
 			     <div class="col">
 			         <div class="modal-bottom fp pull-right">
-			           <button type="submit" class="btn btn-warning ">
-			               立即登录</button>
+			           <a href="#"><img src="assets/btn-promo.png" alt=""></a>
 			         </div>
 			     </div>
 			     </form>

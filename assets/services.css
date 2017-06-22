@@ -80,11 +80,11 @@
 
 .promo_new .tit{background:url(http://www.s36.com/images/tit002.png) no-repeat;}
 .promo_new .row{padding-left:32px;font-size:12px;}
-.promo_new .row ul li{display:block; float:left; width:305px; height:370px;position:relative;padding:6px;}
+.promo_new .row ul li{display:block; float:left; width:305px; height:370px;position:relative;margin: 15px 6px;}
 .promo_new .row h3{font-size:16.5px;padding-top:12px;}
 .promo_new .row p{padding-top:4px;}
-.promo_new .row a{color:#eeeeee;display:block;}
-.promo_new .row a:hover{color:#d9d9d9;}
+.promo_new .row a{color:#ffffff;display:block;}
+.promo_new .row a:hover{color:#ffffff;}
 .promo_new .row span.btn{width:68px;height:20px;text-align:center;line-height:20px;  color:#000;position:absolute;bottom:20px;right:6px;background:url(http://www.s36.com/images/btn_promo.png) no-repeat;}
 .promo_new .row span.btn1{width:68px;height:20px;text-align:center;line-height:20px;  color:#000;position:absolute;bottom:20px;right:110px;background:url(http://www.s36.com/images/btn_promo.png) no-repeat;}
 .promo_new .row .btn-promo a{
